@@ -1,4 +1,4 @@
-/* .bg-wrap{
+.bg-wrap{
     height: 100vh;
     background: linear-gradient(
         to right,
@@ -7,4 +7,53 @@
         white 50%,
         white 100%
     ) ;
-} */
+}
+
+.animate-box{
+    margin-top: 100px;
+}
+
+.mouse{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    z-index: 2;
+}
+.mouse-icon{
+    width: 70px;
+    height: 70px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.mouse-wheel{
+    height: 70px;
+    margin: 2px auto 0;
+    display: block;
+    width: 30px;
+    background: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+    -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+    color: #3e64ff;
+    font-size: 30px;
+}
+.mouse-icon:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: #edf0ff;
+    z-index: -1;
+    transform: rotate(45deg)
+}

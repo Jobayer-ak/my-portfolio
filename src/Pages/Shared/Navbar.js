@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+// import "./Navbar.css";
 
 const Navbar = () => {
     const menuItmes = (
@@ -23,7 +23,7 @@ const Navbar = () => {
         </>
     )
   return (
-    <div className="bg-wrap">
+    <div>
         <div className="navbar container mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
