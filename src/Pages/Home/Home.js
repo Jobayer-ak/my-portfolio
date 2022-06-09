@@ -38,7 +38,9 @@ const Home = () => {
             <div className='mouse'>
                 <a href='#' className='mouse-icon'>
                     <div className='mouse-wheel'>
-                        <FontAwesomeIcon icon={faArrowDownLong} />
+                        <div className='arrow-icon'>
+                            <FontAwesomeIcon icon={faArrowDownLong} />
+                        </div>
                     </div>
                 </a>
             </div>

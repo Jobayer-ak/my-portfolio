@@ -45,6 +45,7 @@
     animation: 1.6s ease infinite wheel-up-down;
     color: #3e64ff;
     font-size: 30px;
+    
 }
 .mouse-icon:after{
     position: absolute;
@@ -56,4 +57,21 @@
     background: #edf0ff;
     z-index: -1;
     transform: rotate(45deg)
+}
+
+.arrow-icon{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    animation: moving 1s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        top: 0;
+        
+    }
+    100%{
+        top: 35px;
+    }
 }
