@@ -1,16 +1,23 @@
-.education-section{
-    /* content: "";
-    width: 80%;
-    margin: 0 auto;
-    height: 2px;
-    background: blue; */
-    border-bottom: 1px solid #999999;
-    margin-right: 110px;
-    /* background: green; */
+.side-menu{
+    padding-top: 100px;
 }
-.education-section p{
+.edu{
+    background: yellow;
+}
+.edu-box{
+    border-bottom: 1px solid #999999;
+}
+
+.institute-info > p{
     color: #999999;
+    
+}
+.edu-info{
+    padding-left: 150px;
+    margin-bottom: 40px;
 }
 .education-icon{
     font-size: 30px;
+    border-radius: 50%;
 }
+
