@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./Navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
     const menuItmes = (
@@ -50,7 +50,7 @@ const Navbar = () => {
             {menuItmes}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="navbar-brand font-bold"><span className="single text-3xl text-white ">J</span>obayer</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
