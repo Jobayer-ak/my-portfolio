@@ -3,14 +3,14 @@ import './App.css';
 import { Router, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import About from "./Pages/About/About"
-import Edecuation from './Pages/Edecuation/Edecuation';
+import Education from './Pages/Education/Education';
 
 function App() {
   return (
     <div>
       <Home></Home>
       <About></About>
-      <Edecuation></Edecuation>
+      <Education></Education>
     </div>
   );
 }

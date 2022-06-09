@@ -1,0 +1,16 @@
+.education-section{
+    /* content: "";
+    width: 80%;
+    margin: 0 auto;
+    height: 2px;
+    background: blue; */
+    border-bottom: 1px solid #999999;
+    margin-right: 110px;
+    /* background: green; */
+}
+.education-section p{
+    color: #999999;
+}
+.education-icon{
+    font-size: 30px;
+}
