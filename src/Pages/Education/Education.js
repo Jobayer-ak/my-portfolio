@@ -9,15 +9,15 @@ const Education = () => {
     <div className="container mx-auto px-12 pt-20">
       <div className="flex flex-cols py-7 gap-10">
         {/* sidebar menu */}
-        <div className="side-menu">
-          <ul>
-            <li>
+        <div className="side-menu ">
+          <ul className="sticky top-20">
+            <li className="font-bold">
               <a href="#education">Education</a>
             </li>
-            <li>
+            <li className="font-bold my-5">
               <a href="#skills">Skills</a>
             </li>
-            <li>
+            <li className="font-bold">
               <a href="#experience">Experience</a>
             </li>
           </ul>
@@ -132,7 +132,7 @@ const Education = () => {
                   <div className="flex flex-cols items-center pt-12 pb-7">
                     <div
                       className="w-full"
-                      style={{ "border-right": "1px solid blue" }}
+                      style={{ "borderRight": "1px solid blue" }}
                     >
                       <h2 className="text-3xl">28%</h2>
                       <p className="text-secondary">Last Week</p>

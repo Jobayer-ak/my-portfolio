@@ -1,7 +1,9 @@
 import React from "react";
 import image from "../../Images/Jobayer.png";
 import "./About.css";
-import pdf from "../Resume/Resume";
+// import pdf from "../Resume/Resume";
+// import CountUp from "react-countup/build/CountUp";
+import CountUp from "react-countup";
 
 const About = () => {
   return (
@@ -35,7 +37,10 @@ const About = () => {
           </div>
 
           <h2 className="text-2xl py-5">
-            <span className="text-primary font-bold">12</span> Projects Complete
+            <span className="text-primary text-3xl font-bold">
+            <CountUp  end={12} />
+            </span>{" "}
+            Projects Complete
           </h2>
 
           <button className="btn btn-primary rounded-full">

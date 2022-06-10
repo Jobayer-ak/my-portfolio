@@ -49,6 +49,8 @@
 }
 .mouse-icon:after{
     position: absolute;
+    width: 67px;
+    height: 67px;
     top: 0;
     left: 0;
     right: 0;

@@ -25,4 +25,23 @@
     padding-left: 150px;
 }
 
+a{
+    transition: .3s all ease;
+}
+/* a:after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:blue;
+} */
+a:hover{
+    color:blue;
+}
 
+/* 
+https://www.kindacode.com/article/react-router-how-to-highlight-active-link/
+*/
