@@ -1,0 +1,20 @@
+.after-position{
+    position: relative;
+}
+.after-position h4::after{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #112fa8;
+    margin: 0 auto;
+}
+
+.services-info:hover{
+    background-color: #3E64FF;
+    color: white;
+    
+}

@@ -2,15 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import "./Education.css";
+import "./ResumeDetail.css";
 
-const Education = () => {
+const ResumeDetail = () => {
   return (
     <div className="container mx-auto px-12 pt-20">
       <div className="flex flex-cols py-7 gap-10">
         {/* sidebar menu */}
         <div className="side-menu ">
-          <ul className="sticky top-20">
+          <ul tabIndex="0"
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 sticky top-20">
             <li className="font-bold">
               <a href="#education">Education</a>
             </li>
@@ -121,10 +122,10 @@ const Education = () => {
             </div>
             <div className="grid grid-cols-3 gap-7">
               <div>
-                <div class="text-center bg-base-100 shadow-xl rounded-md p-3">
+                <div className="text-center bg-base-100 shadow-xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">HTML</h2>
                   <div
-                    class="radial-progress text-primary"
+                    className="radial-progress text-primary"
                     style={{ "--value": "85" }}
                   >
                     85%
@@ -146,10 +147,10 @@ const Education = () => {
               </div>
 
               <div>
-                <div class="text-center bg-base-100 shadow-xl rounded-md p-3">
+                <div className="text-center bg-base-100 shadow-xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">CSS</h2>
                   <div
-                    class="radial-progress text-primary"
+                    className="radial-progress text-primary"
                     style={{ "--value": "85" }}
                   >
                     85%
@@ -157,7 +158,7 @@ const Education = () => {
                   <div className="flex flex-cols items-center pt-12 pb-7">
                     <div
                       className="w-full"
-                      style={{ "border-right": "1px solid blue" }}
+                      style={{ borderRight: "1px solid blue" }}
                     >
                       <h2 className="text-3xl">28%</h2>
                       <p className="text-secondary">Last Week</p>
@@ -171,12 +172,12 @@ const Education = () => {
               </div>
 
               <div>
-                <div class="text-center bg-base-100 shadow-xl rounded-md p-3">
+                <div className="text-center bg-base-100 shadow-xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">
                     JavaScript
                   </h2>
                   <div
-                    class="radial-progress text-primary"
+                    className="radial-progress text-primary"
                     style={{ "--value": "80" }}
                   >
                     80%
@@ -184,7 +185,7 @@ const Education = () => {
                   <div className="flex flex-cols items-center pt-12 pb-7">
                     <div
                       className="w-full"
-                      style={{ "border-right": "1px solid blue" }}
+                      style={{ borderRight: "1px solid blue" }}
                     >
                       <h2 className="text-3xl">28%</h2>
                       <p className="text-secondary">Last Week</p>
@@ -205,7 +206,7 @@ const Education = () => {
                   <h2 className="text-2xl font-bold">React Js</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
                 </div>
-                <progress class="progress progress-primary w-90" value="80" max="100"></progress>
+                <progress className="progress progress-primary w-90" value="80" max="100"></progress>
               </div>
 
               <div>
@@ -213,7 +214,7 @@ const Education = () => {
                 <h2 className="text-2xl font-bold">Tailwind Css</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
                 </div>
-                <progress class="progress progress-primary w-90" value="80" max="100"></progress>
+                <progress className="progress progress-primary w-90" value="80" max="100"></progress>
               </div>
 
               <div>
@@ -221,7 +222,7 @@ const Education = () => {
                 <h2 className="text-2xl font-bold">Bootstrap</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
                 </div>
-                <progress class="progress progress-primary w-90" value="80" max="100"></progress>
+                <progress className="progress progress-primary w-90" value="80" max="100"></progress>
               </div>
 
               <div>
@@ -229,7 +230,7 @@ const Education = () => {
                 <h2 className="text-2xl font-bold">Git</h2>
                   <h2 className="text-2xl font-bold">85%</h2>
                 </div>
-                <progress class="progress progress-primary w-90" value="85" max="100"></progress>
+                <progress className="progress progress-primary w-90" value="85" max="100"></progress>
               </div>
 
             </div>
@@ -242,4 +243,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default ResumeDetail;

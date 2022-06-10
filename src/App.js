@@ -3,14 +3,16 @@ import './App.css';
 import { Router, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import About from "./Pages/About/About"
-import Education from './Pages/Education/Education';
+import ResumeDetail from './Pages/ResumeDetail/ResumeDetail';
+import Services from './Pages/Services/Services';
 
 function App() {
   return (
-    <div>
+    <div className='container mx-auto'>
       <Home></Home>
       <About></About>
-      <Education></Education>
+      <ResumeDetail></ResumeDetail>
+      <Services></Services>
     </div>
   );
 }

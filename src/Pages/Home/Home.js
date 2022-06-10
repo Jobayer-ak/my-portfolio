@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Navbar from '../Shared/Navbar';
 import Typed from 'typed.js';
-import "./Home.css"
+import "./Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
 
