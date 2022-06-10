@@ -9,6 +9,14 @@
     },
     {
         "id": 3,
-        "features": "there are lots of features"
+        "name": "Photographer Guy",
+        "features": "This is Photographer portfolio. It is a SPA React app. It has been desigen with Bootstrap-5. Anyone can signin and register on this site with email and password also with google as well as social site. And check photographer price according to the category. If someone wants to contact with photographer, he/she can contact trough fill up a contact page!",
+        "technology": "HTML5, CSS3, Bootstrap-5, JavaScipt, ReactJs, firebase authentication for login authentication and deploy"
+    },
+    {
+        "id": 4,
+        "name": "Orchid Convention Center",
+        "features": "This is simple responsice design with Bootstrap. This design cosists carousel, card, navbar,  footer, accordion and CSS3 animation",
+        "technology": "HTML5, CSS3, Bootstrap-5, and netlify for deploy!"
     }
 ]

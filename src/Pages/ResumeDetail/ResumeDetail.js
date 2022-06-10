@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
@@ -10,14 +10,17 @@ import "./ResumeDetail.css";
 import useDetails from "../../hooks/useDetails";
 
 const ResumeDetail = () => {
+  //hooks
   const [details] = useDetails();
-
-  console.log(details.length)
-
+  const [loadDetails, setLoadDetails] = useState("")
   
-  const handleDetails = () =>{
-    alert(555)
-  }
+
+  const handleDetails = (details_id) => {
+    const project_details = details.find((detail) => details_id === detail.id);
+    
+    setLoadDetails(project_details);    
+
+  };
 
   return (
     <div className="container mx-auto px-12 pt-20">
@@ -273,42 +276,71 @@ const ResumeDetail = () => {
               Projects
             </h2>
             <div className="grid grid-cols-2 gap-5 shadow-lg p-3">
-              <div class="project">
-                <img src={image1} alt="Avatar" class="image"/>
-                <div class="overlay">
-                  <div class="text">
+              <div className="project">
+                <img src={image1} alt="Avatar" className="image" />
+                <div className="overlay">
+                  <div className="text">
+                  <label onClick={()=>handleDetails(1)} htmlFor="my-modal-6" className="btn modal-button text-accent">
+                      Details
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="project">
+                <img src={image3} alt="Avatar" className="image" />
+                <div className="overlay">
+                  <div className="text">
+                  <label onClick={()=>handleDetails(2)} htmlFor="my-modal-6" className="btn modal-button">
+                      Details
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="project">
+                <img src={image4} alt="Avatar" className="image" />
+                <div className="overlay">
+                  <div className="text">
+                  <label onClick={()=>handleDetails(3)} htmlFor="my-modal-6" className="btn modal-button">
+                      Details
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="project">
+                <img src={image2} alt="Avatar" className="image" />
+                <div className="overlay">
+                  <div className="text">
                    
-                    <button className="btn btn-sm btn-secondary">Details</button>
-                  </div>
-                </div>
-              </div>
-              <div class="project">
-                <img src={image4} alt="Avatar" class="image"/>
-                <div class="overlay">
-                  <div class="text">
-                    
-                    <button className="btn btn-sm btn-secondary">Details</button>
-                  </div>
-                </div>
-              </div>
-              <div class="project">
-                <img src={image3} alt="Avatar" class="image"/>
-                <div class="overlay">
-                  <div class="text">
-                   
-                    <button className="btn btn-sm btn-secondary">Details</button>
-                  </div>
-                </div>
-              </div>
-              < div class="project">
-                <img src={image2} alt="Avatar" class="image"/>
-                <div class="overlay">
-                  <div class="text">
-                    <button onClick={()=>handleDetails()} className="btn btn-sm btn-secondary">Details</button>
+                    <label onClick={()=>handleDetails(4)} htmlFor="my-modal-6" className="btn modal-button">
+                      Details
+                    </label>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal */}
+      {/* <!-- The button to open modal --> */}
+      {/* <label htmlFor="my-modal-6" className="btn modal-button">
+        open modal
+      </label> */}
+
+      {/* <!-- Put this part before </body> tag --> */}
+      <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+      <div className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+          <h3 className="text-xl text-primary font-bold">Features:</h3>
+          <p className="pb-3">{loadDetails.features}</p>
+          <h4 className="text-xl text-primary font-bold">Technology:</h4>
+          <p>{loadDetails.technology}</p>
+          {/* <p>{project_details.features}</p> */}
+          <div className="modal-action">
+            <label htmlFor="my-modal-6" className="btn btn-primary btn-md">
+              Close
+            </label>
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ const About = () => {
 
           <h2 className="text-2xl py-5">
             <span className="text-primary text-3xl font-bold">
-            <CountUp  end={12} />
+            <CountUp  end={20} />
             </span>{" "}
             Projects Complete
           </h2>

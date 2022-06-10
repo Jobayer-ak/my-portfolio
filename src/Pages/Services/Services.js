@@ -42,7 +42,7 @@ const Services = () => {
           <div className="p-4 services-info text-center shadow-lg px-5 py-12">
             <FontAwesomeIcon className="text-6xl" icon={faFile} />
             <div className="after-position p-3 my-7">
-              <h4 className="text-xl uppercase">PSD TO HTML</h4>
+              <h4 className="text-xl uppercase">Design Upgrade</h4>
             </div>
             <div className="hr-style"></div>
             <p className="text-secondary">

@@ -25,6 +25,14 @@ const Home = () => {
             typed.destroy();
         }
     },[]);
+
+    const handleScroll = () =>{
+        window.scrollTo({
+            top: 700,
+            behavior: 'smooth',
+        });
+    }
+
     return (
         <div className="bg-wrap">
             <Navbar></Navbar>
@@ -35,11 +43,11 @@ const Home = () => {
                     <span className='text-primary text-4xl ml-1' ref={el}> </span>
                 </h2>
             </div>
-            <div className='mouse'>
+            <div className='mouse' onClick={()=>handleScroll()} >
                 <a href='#' className='mouse-icon'>
                     <div className='mouse-wheel'>
                         <div className='arrow-icon'>
-                            <FontAwesomeIcon icon={faArrowDownLong} />
+                            <FontAwesomeIcon  icon={faArrowDownLong} />
                         </div>
                     </div>
                 </a>
