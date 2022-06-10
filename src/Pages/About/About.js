@@ -20,7 +20,6 @@ const About = () => {
           <div className="flex flex-row">
             <div className="basis-2/6">
               <p className="text-xl font-bold">Name:</p>
-              <p className="text-xl font-bold">Date Of birth:</p>
               <p className="text-xl font-bold">Address:</p>
               <p className="text-xl font-bold">Zip code:</p>
               <p className="text-xl font-bold">E-mail:</p>
@@ -28,7 +27,6 @@ const About = () => {
             </div>
             <div className="basis-2/4 info">
               <p className="text-xl">Md. Jobayer Akanda</p>
-              <p className="text-xl">January 01, 1993</p>
               <p className="text-xl">Mymensingh, Bangladesh</p>
               <p className="text-xl">2252</p>
               <p className="text-xl">jobayer.ak@gmail.com</p>
