@@ -8,7 +8,7 @@ import Services from './Pages/Services/Services';
 
 function App() {
   return (
-    <div className='container mx-auto'>
+    <div>
       <Home></Home>
       <About></About>
       <ResumeDetail></ResumeDetail>

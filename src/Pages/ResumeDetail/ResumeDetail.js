@@ -2,16 +2,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import image1 from "../../Images/Screenshot1.png";
+import image2 from "../../Images/Screenshot2.png";
+import image3 from "../../Images/Screenshot3.png";
+import image4 from "../../Images/Screenshot4.png";
 import "./ResumeDetail.css";
+import useDetails from "../../hooks/useDetails";
 
 const ResumeDetail = () => {
+  const [details] = useDetails();
+
+  console.log(details.length)
+
+  
+  const handleDetails = () =>{
+    alert(555)
+  }
+
   return (
     <div className="container mx-auto px-12 pt-20">
       <div className="flex flex-cols py-7 gap-10">
         {/* sidebar menu */}
         <div className="side-menu ">
-          <ul tabIndex="0"
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 sticky top-20">
+          <ul
+            tabIndex="0"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 sticky top-20"
+          >
             <li className="font-bold">
               <a href="#education">Education</a>
             </li>
@@ -19,7 +35,7 @@ const ResumeDetail = () => {
               <a href="#skills">Skills</a>
             </li>
             <li className="font-bold">
-              <a href="#experience">Experience</a>
+              <a href="#projects">Projects</a>
             </li>
           </ul>
         </div>
@@ -133,7 +149,7 @@ const ResumeDetail = () => {
                   <div className="flex flex-cols items-center pt-12 pb-7">
                     <div
                       className="w-full"
-                      style={{ "borderRight": "1px solid blue" }}
+                      style={{ borderRight: "1px solid blue" }}
                     >
                       <h2 className="text-3xl">28%</h2>
                       <p className="text-secondary">Last Week</p>
@@ -206,36 +222,93 @@ const ResumeDetail = () => {
                   <h2 className="text-2xl font-bold">React Js</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
                 </div>
-                <progress className="progress progress-primary w-90" value="80" max="100"></progress>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="80"
+                  max="100"
+                ></progress>
               </div>
 
               <div>
                 <div className="flex flex-cols justify-between px-2">
-                <h2 className="text-2xl font-bold">Tailwind Css</h2>
+                  <h2 className="text-2xl font-bold">Tailwind Css</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
                 </div>
-                <progress className="progress progress-primary w-90" value="80" max="100"></progress>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="80"
+                  max="100"
+                ></progress>
               </div>
 
               <div>
-              <div className="flex flex-cols justify-between px-2">
-                <h2 className="text-2xl font-bold">Bootstrap</h2>
+                <div className="flex flex-cols justify-between px-2">
+                  <h2 className="text-2xl font-bold">Bootstrap</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
                 </div>
-                <progress className="progress progress-primary w-90" value="80" max="100"></progress>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="80"
+                  max="100"
+                ></progress>
               </div>
 
               <div>
-              <div className="flex flex-cols justify-between px-2">
-                <h2 className="text-2xl font-bold">Git</h2>
+                <div className="flex flex-cols justify-between px-2">
+                  <h2 className="text-2xl font-bold">Git</h2>
                   <h2 className="text-2xl font-bold">85%</h2>
                 </div>
-                <progress className="progress progress-primary w-90" value="85" max="100"></progress>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="85"
+                  max="100"
+                ></progress>
               </div>
-
             </div>
+          </div>
 
-
+          {/* projects */}
+          <div id="projects" className="mt-12">
+            <h2 className="text-4xl text-primary font-bold text-center my-7">
+              Projects
+            </h2>
+            <div className="grid grid-cols-2 gap-5 shadow-lg p-3">
+              <div class="project">
+                <img src={image1} alt="Avatar" class="image"/>
+                <div class="overlay">
+                  <div class="text">
+                   
+                    <button className="btn btn-sm btn-secondary">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <img src={image4} alt="Avatar" class="image"/>
+                <div class="overlay">
+                  <div class="text">
+                    
+                    <button className="btn btn-sm btn-secondary">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <img src={image3} alt="Avatar" class="image"/>
+                <div class="overlay">
+                  <div class="text">
+                   
+                    <button className="btn btn-sm btn-secondary">Details</button>
+                  </div>
+                </div>
+              </div>
+              < div class="project">
+                <img src={image2} alt="Avatar" class="image"/>
+                <div class="overlay">
+                  <div class="text">
+                    <button onClick={()=>handleDetails()} className="btn btn-sm btn-secondary">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
