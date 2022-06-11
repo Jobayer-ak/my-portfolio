@@ -141,7 +141,7 @@ const ResumeDetail = () => {
             </div>
             <div className="grid grid-cols-3 gap-7">
               <div>
-                <div className="text-center bg-base-100 shadow-xl rounded-md p-3">
+                <div className="text-center bg-base-100 shadow-2xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">HTML</h2>
                   <div
                     className="radial-progress text-primary"
@@ -166,7 +166,7 @@ const ResumeDetail = () => {
               </div>
 
               <div>
-                <div className="text-center bg-base-100 shadow-xl rounded-md p-3">
+                <div className="text-center bg-base-100 shadow-2xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">CSS</h2>
                   <div
                     className="radial-progress text-primary"
@@ -191,7 +191,7 @@ const ResumeDetail = () => {
               </div>
 
               <div>
-                <div className="text-center bg-base-100 shadow-xl rounded-md p-3">
+                <div className="text-center bg-base-100 shadow-2xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">
                     JavaScript
                   </h2>

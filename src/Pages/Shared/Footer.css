@@ -1,0 +1,23 @@
+#footer{
+    background: #000;
+    height: 400px;
+    width: auto;
+}
+
+.links li{
+    margin-bottom: 10px;
+}
+.links li a{
+    text-decoration: none;
+    color: #5AC4B9;
+}
+
+.links li a:hover{
+    color: rgb(61, 61, 240);
+}
+
+.icon{
+    background: rgb(70, 68, 68);
+    padding: 10px;
+    border-radius: 50%;
+}
