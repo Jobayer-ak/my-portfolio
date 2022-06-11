@@ -4,6 +4,7 @@ import "./About.css";
 // import pdf from "../Resume/Resume";
 // import CountUp from "react-countup/build/CountUp";
 import CountUp from "react-countup";
+import pdf from "../../CV/Resume-of-Jobayer-1.pdf";
 
 const About = () => {
   return (
@@ -41,14 +42,9 @@ const About = () => {
             Projects Complete
           </h2>
 
-          <button className="btn btn-primary rounded-full">
-            <a
-              href="https://drive.google.com/file/d/1Pue-VnLk-WyJRhShobMSbjMXeq-vEa3n/view?usp=sharing"
-              target="_blank"
-            >
-              Download Resume
-            </a>
-          </button>
+      
+            <a href={pdf} className="btn btn-primary resume rounded-full" download>Download Resume</a>
+         
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
 import {
-  faLocation,
+  faLocationDot,
   faPaperPlane,
-  faPhone,
-  faVoicemail,
+  faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -21,7 +20,7 @@ const Contact = () => {
         <div className="text-center w-96 shadow-2xl p-9">
           <FontAwesomeIcon
             className="text-5xl bg-primary p-7 my-5 icon"
-            icon={faLocation}
+            icon={faLocationDot}
           />
           <h4 className="text-xl font-bold mb-5">Address</h4>
           <p className="text-secondary">Tarakanda, Mymensingh, Bangladesh</p>

@@ -7,3 +7,6 @@
 .info p{
     color: #999999;
 }
+.resume:hover{
+    color: black;
+}
