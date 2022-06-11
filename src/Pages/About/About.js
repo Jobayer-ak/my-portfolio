@@ -8,8 +8,8 @@ import CountUp from "react-countup";
 const About = () => {
   return (
     <div className="container mx-auto px-12">
-      <div id="about" className="flex flex-cols ">
-        <img src={image} className="image w-96 basis-2/4"></img>
+      <div id="about" className="flex flex-row ">
+        <img src={image} className="image basis-2/4 pt-5"></img>
 
         <div className="aboutMe basis-2/4 p-10">
           <h2 className="text-bold text-5xl font-bold mb-5">About Me</h2>

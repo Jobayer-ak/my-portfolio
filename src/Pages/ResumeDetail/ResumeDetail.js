@@ -277,7 +277,7 @@ const ResumeDetail = () => {
             </h2>
             <div className="grid grid-cols-2 gap-5 shadow-lg p-3">
               <div className="project shadow-2xl">
-                <img src={image1} alt="Avatar" className="image" />
+                <img src={image1} alt="Avatar" className="project_image" />
                 <div className="overlay">
                   <div className="text">
                   <label onClick={()=>handleDetails(1)} htmlFor="my-modal-6" className="btn modal-button text-accent">
@@ -287,7 +287,7 @@ const ResumeDetail = () => {
                 </div>
               </div>
               <div className="project shadow-2xl">
-                <img src={image3} alt="Avatar" className="image" />
+                <img src={image3} alt="Avatar" className="project_image" />
                 <div className="overlay">
                   <div className="text">
                   <label onClick={()=>handleDetails(2)} htmlFor="my-modal-6" className="btn modal-button">
@@ -297,7 +297,7 @@ const ResumeDetail = () => {
                 </div>
               </div>
               <div className="project shadow-2xl">
-                <img src={image4} alt="Avatar" className="image" />
+                <img src={image4} alt="Avatar" className="project_image" />
                 <div className="overlay">
                   <div className="text">
                   <label onClick={()=>handleDetails(3)} htmlFor="my-modal-6" className="btn modal-button">
@@ -307,7 +307,7 @@ const ResumeDetail = () => {
                 </div>
               </div>
               <div className="project shadow-2xl">
-                <img src={image2} alt="Avatar" className="image" />
+                <img src={image2} alt="Avatar" className="project_image" />
                 <div className="overlay">
                   <div className="text">
                    
