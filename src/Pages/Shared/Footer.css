@@ -16,8 +16,15 @@
     color: rgb(61, 61, 240);
 }
 
-.icon{
+.phone, .mail{
+    color: #5AC4B9;
+}
+
+.social_icon{
     background: rgb(70, 68, 68);
     padding: 10px;
     border-radius: 50%;
+}
+.social_icon:hover{
+    background: rgb(58, 58, 240);
 }

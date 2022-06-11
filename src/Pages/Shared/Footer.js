@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+    faEnvelope,
   faLocation,
   faPaperPlane,
-  faPhone,
+  faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import "./Footer.css";
@@ -72,24 +73,41 @@ const Footer = () => {
                 Tarakanada, Mymensingh, Bangladesh
               </p>
             </div>
-            <div className="flex flex-cols justify-around">
-              <a href="https://www.twitter.com" target="_blank">
+            <div className="flex flex-cols my-7">
+              <a href="https://www.twitter.com" className="pr-1" target="_blank">
                 <FontAwesomeIcon
                   className="text-xl text-white"
                   icon={faPhone}
                 />
               </a>
-              <a href="tel://8801725008757" className="">+880 1725 008757</a>
+              
+                <a href="tel://8801725008757" className="pl-3 phone">
+                  +880 1725 008757
+                </a>
+              
+            </div>
+            <div className="flex flex-cols my-7">
+              <a href="https://www.twitter.com" className="pr-1" target="_blank">
+                <FontAwesomeIcon
+                  className="text-xl text-white"
+                  icon={faEnvelope}
+                />
+              </a>
+              
+                <a href="https://www.gmail.com" target="_blank" className="pl-3 mail">
+                  jobayer.ak@gmail.com
+                </a>
+              
             </div>
           </div>
         </div>
 
         {/* Social Links */}
-        <div className="flex flex-cols justify-center items-center gap-10 py-5 social-links">
+        <div className="flex flex-cols justify-center items-center gap-10 py-2 social-links">
           <div>
             <a href="https://www.facebook.com" target="_blank">
               <FontAwesomeIcon
-                className="text-xl text-white icon"
+                className="text-xl text-white social_icon"
                 icon={faLocation}
               />
             </a>
@@ -97,7 +115,7 @@ const Footer = () => {
           <div>
             <a href="https://www.linkedin.com" target="_blank">
               <FontAwesomeIcon
-                className="text-xl text-white icon"
+                className="text-xl text-white social_icon"
                 icon={faPaperPlane}
               />
             </a>
@@ -105,7 +123,7 @@ const Footer = () => {
           <div>
             <a href="https://www.twitter.com" target="_blank">
               <FontAwesomeIcon
-                className="text-xl text-white icon"
+                className="text-xl text-white social_icon"
                 icon={faPhone}
               />
             </a>

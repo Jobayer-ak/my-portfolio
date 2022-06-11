@@ -17,7 +17,7 @@ const Contact = () => {
         and Consonantia
       </p>
 
-      <div className="flex flex-cols justify-between items-center my-12">
+      <div className="flex flex-cols justify-between items-center gap-7 my-12">
         <div className="text-center w-96 shadow-2xl p-9">
           <FontAwesomeIcon
             className="text-5xl bg-primary p-7 my-5 icon"

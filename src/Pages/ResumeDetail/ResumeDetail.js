@@ -276,7 +276,7 @@ const ResumeDetail = () => {
               Projects
             </h2>
             <div className="grid grid-cols-2 gap-5 shadow-lg p-3">
-              <div className="project">
+              <div className="project shadow-2xl">
                 <img src={image1} alt="Avatar" className="image" />
                 <div className="overlay">
                   <div className="text">
@@ -286,7 +286,7 @@ const ResumeDetail = () => {
                   </div>
                 </div>
               </div>
-              <div className="project">
+              <div className="project shadow-2xl">
                 <img src={image3} alt="Avatar" className="image" />
                 <div className="overlay">
                   <div className="text">
@@ -296,7 +296,7 @@ const ResumeDetail = () => {
                   </div>
                 </div>
               </div>
-              <div className="project">
+              <div className="project shadow-2xl">
                 <img src={image4} alt="Avatar" className="image" />
                 <div className="overlay">
                   <div className="text">
@@ -306,7 +306,7 @@ const ResumeDetail = () => {
                   </div>
                 </div>
               </div>
-              <div className="project">
+              <div className="project shadow-2xl">
                 <img src={image2} alt="Avatar" className="image" />
                 <div className="overlay">
                   <div className="text">
@@ -322,13 +322,7 @@ const ResumeDetail = () => {
         </div>
       </div>
 
-      {/* Modal */}
-      {/* <!-- The button to open modal --> */}
-      {/* <label htmlFor="my-modal-6" className="btn modal-button">
-        open modal
-      </label> */}
-
-      {/* <!-- Put this part before </body> tag --> */}
+    {/* Modal */}
       <input type="checkbox" id="my-modal-6" className="modal-toggle" />
       <div className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
@@ -336,7 +330,7 @@ const ResumeDetail = () => {
           <p className="pb-3">{loadDetails.features}</p>
           <h4 className="text-xl text-primary font-bold">Technology:</h4>
           <p>{loadDetails.technology}</p>
-          {/* <p>{project_details.features}</p> */}
+          
           <div className="modal-action">
             <label htmlFor="my-modal-6" className="btn btn-primary btn-md">
               Close

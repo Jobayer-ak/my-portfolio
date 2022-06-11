@@ -46,14 +46,14 @@ const Navbar = () => {
             </div>
             <Link to="/" className="navbar-brand font-bold"><span className="single text-3xl text-white ">J</span>obayer</Link>
           </div>
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal items p-0">
               {menuItmes}
             </ul>
           </div>
-          <div className="navbar-end">
+          {/* <div className="navbar-end">
             <a className="btn">Get started</a>
-          </div>
+          </div> */}
         </div>
   </div>  );
 };
