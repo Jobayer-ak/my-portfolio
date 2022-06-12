@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import image1 from "../../Images/Screenshot1.png";
@@ -8,13 +8,20 @@ import image3 from "../../Images/Screenshot3.png";
 import image4 from "../../Images/Screenshot4.png";
 import "./ResumeDetail.css";
 import useDetails from "../../hooks/useDetails";
+import { useInView } from "react-intersection-observer";
 
 const ResumeDetail = () => {
   //hooks
   const [details] = useDetails();
-  const [loadDetails, setLoadDetails] = useState("")
-  
+  const [loadDetails, setLoadDetails] = useState("");
+  // const myRef = useRef();
+  const { ref:eduRef, inView: eduIsVisible} = useInView();
+  const {ref:skillsRef, inView: skillsIsVisible} = useInView();
+  const {ref:projectsRef, inView: projectsIsVisible} = useInView();
+ 
 
+  console.log(eduIsVisible);
+  
   const handleDetails = (details_id) => {
     const project_details = details.find((detail) => details_id === detail.id);
     
@@ -32,20 +39,20 @@ const ResumeDetail = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 sticky top-20"
           >
             <li className="font-bold">
-              <a href="#education">Education</a>
+              <a className={eduIsVisible? "text-primary": ""} href="#education">Education</a>
             </li>
             <li className="font-bold my-5">
-              <a href="#skills">Skills</a>
+              <a className={skillsIsVisible? "text-primary": ""}  href="#skills">Skills</a>
             </li>
             <li className="font-bold">
-              <a href="#projects">Projects</a>
+              <a className={projectsIsVisible? "text-primary": ""}  href="#projects">Projects</a>
             </li>
           </ul>
         </div>
 
         {/* education skills experience */}
         <div>
-          <div id="education">
+          <div ref={eduRef} id="education">
             <div className="edu-info">
               <div className="mb-9">
                 <h2 className="text-primary text-4xl font-bold">Education</h2>
@@ -113,7 +120,7 @@ const ResumeDetail = () => {
 
                 <div className="institute-info pt-1">
                   <h2 className="text-primary text-xl font-bold">
-                    2011 to 2016
+                    2004 to 2009
                   </h2>
                   <h2 className="text-3xl font-bold my-2">
                     Secondary School Certificate
@@ -135,7 +142,7 @@ const ResumeDetail = () => {
           </div>
 
           {/* skills */}
-          <div id="skills" className="skills-info">
+          <div ref={skillsRef} id="skills" className="skills-info">
             <div className="mb-9">
               <h2 className="text-primary text-4xl font-bold">Skills</h2>
             </div>
@@ -271,7 +278,7 @@ const ResumeDetail = () => {
           </div>
 
           {/* projects */}
-          <div id="projects" className="mt-12">
+          <div ref={projectsRef} id="projects" className="mt-12">
             <h2 className="text-4xl text-primary font-bold text-center my-7">
               Projects
             </h2>
