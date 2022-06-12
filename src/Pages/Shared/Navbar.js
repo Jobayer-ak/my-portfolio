@@ -6,18 +6,23 @@ const Navbar = () => {
     const menuItmes = (
         <>
             <li>
-                <Link to="#home">Home</Link>
+                <Link to="/home">Home</Link>
             </li>
             <li>
-                <Link to="#about">About</Link>
+                <Link to="/about">About</Link>
             </li>
             <li>
-                <Link to="#contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
             </li>
         </>
     )
+    
+    const clsName = "bg_color";
+    const emptyClass = "";
+    const locationName = window.location.pathname;
+    console.log(locationName)
   return (
-    <div>
+    <div className= {(locationName == "/home") ? clsName: emptyClass}>
         <div className="navbar container mx-auto px-12">
           <div className="navbar-start">
             <div className="dropdown">

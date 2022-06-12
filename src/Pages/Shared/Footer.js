@@ -125,7 +125,7 @@ const Footer = () => {
 
         {/* copy rights */}
         <div className="mt-6">
-          <p className="text-center text-secondary">Copyright &copy;2022 All right reserved by Jobayer</p>
+          <p className="text-center text-secondary">Copyright &copy;2022 | All right reserved by Jobayer</p>
         </div>
       </div>
     </div>

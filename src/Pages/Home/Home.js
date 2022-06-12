@@ -1,59 +1,75 @@
-import React, { useEffect, useRef } from 'react';
-import Navbar from '../Shared/Navbar';
-import Typed from 'typed.js';
+import React, { useEffect, useRef } from "react";
+import Navbar from "../Shared/Navbar";
+import Typed from "typed.js";
 import "./Home.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
+import About from "../About/About";
+import ResumeDetail from "../ResumeDetail/ResumeDetail";
+import Services from "../Services/Services";
+import Contact from "../Contact/Contact";
+import Footer from "../Shared/Footer";
 
 const Home = () => {
-    const el = useRef(null);
+  const el = useRef(null);
 
-    useEffect(()=>{
-        const typed = new Typed(el.current, {
-            strings: ["Front End Developer."],
-            startDelay: 300,
-            typeSpeed: 150,
-            backDelay: 150,
-            backSpeed:150, 
-            smartBackspace: true,
-            showCursor: true, 
-            loop:true,
-        });
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Front End Developer."],
+      startDelay: 300,
+      typeSpeed: 150,
+      backDelay: 150,
+      backSpeed: 150,
+      smartBackspace: true,
+      showCursor: true,
+      loop: true,
+    });
 
-        // Destroy
-        return ()=>{
-            typed.destroy();
-        }
-    },[]);
+    // Destroy
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
-    const handleScroll = () =>{
-        window.scrollTo({
-            top: 700,
-            behavior: 'smooth',
-        });
-    }
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 700,
+      behavior: "smooth",
+    });
+  };
 
-    return (
-        <div className="bg-wrap">
-            <Navbar></Navbar>
-            <div className='text-center flex flex-col justify-center items-center animate-box'>
-                <p className='text-primary text-xl font-bold tracking-widest uppercase'>Hey! I am</p>
-                <h1 className='font-bold text-6xl'>Md. Jobayer Akanda</h1>
-                <h2 className='mt-3 text-3xl font-bold'>I'm a  
-                    <span className='text-primary text-4xl ml-1' ref={el}> </span>
-                </h2>
-            </div>
-            <div className='mouse' onClick={()=>handleScroll()} >
-                <a href='#' className='mouse-icon'>
-                    <div className='mouse-wheel'>
-                        <div className='arrow-icon'>
-                            <FontAwesomeIcon  icon={faArrowDownLong} />
-                        </div>
-                    </div>
-                </a>
-            </div>
+  return (
+    <div>
+      <div className="bg-wrap">
+        <div className="text-center flex flex-col justify-center items-center animate-box">
+          <p className="text-primary text-xl font-bold tracking-widest uppercase">
+            Hey! I am
+          </p>
+          <h1 className="font-bold text-6xl">Md. Jobayer Akanda</h1>
+          <h2 className="mt-3 text-3xl font-bold">
+            I'm a
+            <span className="text-primary text-4xl ml-1" ref={el}>
+              {" "}
+            </span>
+          </h2>
         </div>
-    );
+        <div className="mouse" onClick={() => handleScroll()}>
+          <a href="#" className="mouse-icon">
+            <div className="mouse-wheel">
+              <div className="arrow-icon">
+                <FontAwesomeIcon icon={faArrowDownLong} />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <About></About>
+      <ResumeDetail></ResumeDetail>
+      <Services></Services>
+      <Contact></Contact>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default Home;

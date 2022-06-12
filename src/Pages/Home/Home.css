@@ -7,10 +7,11 @@
         white 50%,
         white 100%
     ) ;
+    padding-top: 30vh;
 }
 
 .animate-box{
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
 }
 
 .mouse{
