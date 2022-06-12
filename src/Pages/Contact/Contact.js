@@ -1,7 +1,7 @@
 import {
   faLocationDot,
   faPaperPlane,
-  faPhone
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -18,30 +18,34 @@ const Contact = () => {
 
       <div className="flex flex-cols justify-between items-center gap-7 my-12">
         <div className="text-center w-96 shadow-2xl p-9">
-          <FontAwesomeIcon
-            className="text-5xl bg-primary p-7 my-5 icon"
-            icon={faLocationDot}
-          />
-          <h4 className="text-xl font-bold mb-5">Address</h4>
+          <div className="flex flex-col justify-center items-center icon_parent">
+            <FontAwesomeIcon
+              className= "icon"
+              icon={faLocationDot}
+            />
+          </div>
+          <h4 className="text-xl font-bold my-5">Address</h4>
           <p className="text-secondary">Tarakanda, Mymensingh, Bangladesh</p>
         </div>
         <div className="text-center w-96 shadow-2xl p-9">
-          <FontAwesomeIcon
-            className="text-5xl bg-primary p-7 my-5 icon"
-            icon={faPhone}
-          />
-          <h4 className="text-xl font-bold mb-5">Phone Number</h4>
-          <a href="tel://8801725008757">
-            +880 1725 008757
-          </a>
+          <div className="flex flex-col justify-center items-center icon_parent">
+            <FontAwesomeIcon
+              className= "icon"
+              icon={faPhone}
+            />
+          </div>
+          <h4 className="text-xl font-bold my-5">Phone Number</h4>
+          <a className="text-secondary" href="tel://8801725008757">+880 1725 008757</a>
         </div>
         <div className="text-center w-96 shadow-2xl p-9">
-          <FontAwesomeIcon
-            className="text-5xl bg-primary p-7 my-5 icon"
-            icon={faPaperPlane}
-          />
-          <h4 className="text-xl font-bold mb-5">E-mail</h4>
-          <a href="https://www.gmail.com" target="_blank">
+          <div className="flex flex-col justify-center items-center icon_parent">
+            <FontAwesomeIcon
+              className= "icon"
+              icon={faPaperPlane}
+            />
+          </div>
+          <h4 className="text-xl font-bold my-5">E-mail</h4>
+          <a  href="https://www.gmail.com" target="_blank">
             <p className="text-primary">jobayer.ak@gmail.com</p>
           </a>
         </div>

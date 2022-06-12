@@ -1,4 +1,13 @@
+.icon_parent{
+    background: #3D64FF;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 15px;
+}
 .icon{
     border-radius: 50%;
     color: white;
+    font-size: 35px;
 }
