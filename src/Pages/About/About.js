@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="container mx-auto px-12">
       <div id="about" className="sm:flex md:flex-cols lg:flex-cols justify-between items-center py-7">
-        <div className="p-3 md:p-0 lg:p-8">
+        <div className="p-3 md:pr-10 lg:p-8">
           <img src={image} className="image"></img>
         </div>
 
