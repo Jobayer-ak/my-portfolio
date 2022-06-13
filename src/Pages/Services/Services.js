@@ -12,43 +12,40 @@ const Services = () => {
         and Consonantia
       </p>
       <div className="my-5 flex flex-cols justify-center items-center gap-7 py-8">
-        <div>
-          <div className="p-4 services-info text-center shadow-2xl px-5 py-12 ">
-            <FontAwesomeIcon className="text-6xl icon" icon={faLaptopCode} />
-            <div className="after-position py-3 my-7">
-              <h4 className="text-xl uppercase">WEB DESIGN</h4>
+      <div>
+          <div className="services-info text-center shadow-2xl p-12">
+            <FontAwesomeIcon className="text-6xl" icon={faLaptopCode} />
+            <div className="after-position p-3 my-7">
+              <h4 className="text-xl uppercase px-5">WEBsite design</h4>
             </div>
-
-            <p className="text-secondary">
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia
-            </p>
+            <div className="hr-style"></div>
+            {/* <p className="text-secondary">
+              As a web developer i develop website with ReactJs, NodeJs, ExpressJs, and MongoDB. 
+            </p> */}
           </div>
         </div>
         <div>
-          <div className="p-4 services-info text-center shadow-2xl px-5 py-12">
+          <div className="services-info text-center shadow-2xl p-12">
             <FontAwesomeIcon className="text-6xl" icon={faCode} />
             <div className="after-position p-3 my-7">
               <h4 className="text-xl uppercase">WEB Development</h4>
             </div>
             <div className="hr-style"></div>
-            <p className="text-secondary">
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia.
-            </p>
+            {/* <p className="text-secondary">
+              As a web developer i develop website with ReactJs, NodeJs, ExpressJs, and MongoDB. 
+            </p> */}
           </div>
         </div>
         <div>
-          <div className="p-4 services-info text-center shadow-2xl px-5 py-12">
+          <div className="services-info text-center shadow-2xl p-12">
             <FontAwesomeIcon className="text-6xl" icon={faFile} />
             <div className="after-position p-3 my-7">
-              <h4 className="text-xl uppercase">Design Upgrade</h4>
+              <h4 className="text-xl uppercase px-2">Design Upgrade</h4>
             </div>
             <div className="hr-style"></div>
-            <p className="text-secondary">
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia.
-            </p>
+            {/* <p className="text-secondary">
+              As a web developer i develop website with ReactJs, NodeJs, ExpressJs, and MongoDB. 
+            </p> */}
           </div>
         </div>
       </div>

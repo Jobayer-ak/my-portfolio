@@ -1,5 +1,8 @@
-.image{
+.image_bg{
     background: #C6C4C5;
+}
+.image{
+    width: 80%;
 }
 .aboutMe > p{
     color: #999999;
@@ -9,4 +12,15 @@
 }
 .resume:hover{
     color: black;
+}
+
+@media only screen and (max-width: 640px) {
+    .image{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .image{
+        width: 80%;
+    }
 }

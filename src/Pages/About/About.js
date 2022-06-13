@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../Images/Jobayer.png";
+import image from "../../Images/my-bg-with-pic.png";
 import "./About.css";
 // import pdf from "../Resume/Resume";
 // import CountUp from "react-countup/build/CountUp";
@@ -9,10 +9,12 @@ import pdf from "../../CV/Resume-of-Jobayer-1.pdf";
 const About = () => {
   return (
     <div className="container mx-auto px-12">
-      <div id="about" className="flex flex-row ">
-        <img src={image} className="image basis-2/4 pt-5"></img>
+      <div id="about" className="flex md:flex-col lg:flex-cols justify-between items-center">
+        <div className="lg:p-8">
+          <img src={image} className="image"></img>
+        </div>
 
-        <div className="aboutMe basis-2/4 p-10">
+        <div className="aboutMe lg:p-10">
           <h2 className="text-bold text-5xl font-bold mb-5">About Me</h2>
           <p className="pb-5">
             A small river named Duden flows by their place and supplies it with
@@ -37,14 +39,18 @@ const About = () => {
 
           <h2 className="text-2xl py-5">
             <span className="text-primary text-3xl font-bold">
-            <CountUp  end={20} />
+              <CountUp end={20} />
             </span>{" "}
             Projects Complete
           </h2>
 
-      
-            <a href={pdf} className="btn btn-primary resume rounded-full" download>Download Resume</a>
-         
+          <a
+            href={pdf}
+            className="btn btn-primary resume rounded-full"
+            download
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </div>

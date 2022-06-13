@@ -1,11 +1,15 @@
 [
     {
         "id": 1,
-        "features": "there are lots of features"
+        "name": "ak-accessories",
+        "features": "This is Simple manufacturer website.It is a responsive design for mobile, tablet, and large screen display. This app has login, registration, backend CRUD operation, admin panel, and payment system. You can order parts, delete order before payment, see your orders, confirmation toast and etc.",
+        "technology": "HTML5, CSS3, twailwind css, daisyui, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), stripe payment, firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). "
     },
     {
-        "id": 2,
-        "features": "there are lots of features"
+        "id":2,
+        "name": "e-warehouse",
+        "features": "It is online warehouse website.It is a responsive design for mobile, tablet, and large screen display. This app has login, registration. You can store products, delete product, update product, see your stored products.",
+        "technology": "HTML5, CSS3, Bootstrap-5, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). "
     },
     {
         "id": 3,

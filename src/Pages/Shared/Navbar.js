@@ -22,7 +22,7 @@ const Navbar = () => {
     const locationName = window.location.pathname;
     console.log(locationName)
   return (
-    <div className= {(locationName == "/home") ? clsName: emptyClass}>
+    <div className= {(locationName === "/home") ? clsName: emptyClass}>
         <div className="navbar container mx-auto px-12">
           <div className="navbar-start">
             <div className="dropdown">

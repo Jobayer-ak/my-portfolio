@@ -20,7 +20,7 @@ const ResumeDetail = () => {
   const {ref:projectsRef, inView: projectsIsVisible} = useInView();
  
 
-  console.log(eduIsVisible);
+  // console.log(eduIsVisible);
   
   const handleDetails = (details_id) => {
     const project_details = details.find((detail) => details_id === detail.id);
@@ -71,12 +71,7 @@ const ResumeDetail = () => {
                   <h3 className="text-xl font-bold py-2">
                     Changde Vocational Technical College, Hunan, China
                   </h3>
-                  <p className="pb-5">
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -99,12 +94,7 @@ const ResumeDetail = () => {
                   <h3 className="text-xl font-bold py-2">
                     Shyamoli Ideal Polytechnic Institute, Dhaka, Bangladesh
                   </h3>
-                  <p className="pb-5">
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -128,12 +118,7 @@ const ResumeDetail = () => {
                   <h3 className="text-xl font-bold py-2">
                     Taldighi High School, Tarakanada, Mymensingh, Bangladesh
                   </h3>
-                  <p className="pb-5">
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
+                  
                 </div>
               </div>
             </div>
