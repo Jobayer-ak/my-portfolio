@@ -9,8 +9,8 @@ import pdf from "../../CV/Resume-of-Jobayer-1.pdf";
 const About = () => {
   return (
     <div className="container mx-auto px-12">
-      <div id="about" className="flex md:flex-col lg:flex-cols justify-between items-center">
-        <div className="lg:p-8">
+      <div id="about" className="sm:flex md:flex-cols lg:flex-cols justify-between items-center py-7">
+        <div className="p-3 md:p-0 lg:p-8">
           <img src={image} className="image"></img>
         </div>
 

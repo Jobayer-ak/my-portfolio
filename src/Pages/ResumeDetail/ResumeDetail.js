@@ -31,7 +31,7 @@ const ResumeDetail = () => {
 
   return (
     <div className="container mx-auto px-12 pt-20">
-      <div className="flex flex-cols py-7 gap-10">
+      <div className="sm:flex md:flex-cols lg:flex-cols py-7 sm:gap-4 md:gap-10 lg:gap-10">
         {/* sidebar menu */}
         <div className="side-menu ">
           <ul
