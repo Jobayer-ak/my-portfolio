@@ -375,6 +375,10 @@ const ResumeDetail = () => {
           <h4 className="text-xl text-primary font-bold">Technology:</h4>
           <p>{loadDetails.technology}</p>
           
+          <a className="btn btn-sm btn-primary text-center mr-2" href="https://github.com/Jobayer-ak/photographer-guy" target="_blank">Code Link</a>
+
+          <a className="btn btn-sm btn-primary text-center" href="https://github.com/Jobayer-ak/photographer-guy" target="_blank">Code Link</a>
+          
           <div className="modal-action">
             <label htmlFor="my-modal-6" className="btn btn-primary btn-md">
               Close

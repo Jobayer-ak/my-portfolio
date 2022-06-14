@@ -8,27 +8,28 @@ import ResumeDetail from "../ResumeDetail/ResumeDetail";
 import Services from "../Services/Services";
 import Contact from "../Contact/Contact";
 import Footer from "../Shared/Footer";
+import ReactTypingEffect from 'react-typing-effect';
 
 const Home = () => {
   const el = useRef(null);
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["Front End Developer."],
-      startDelay: 300,
-      typeSpeed: 150,
-      backDelay: 150,
-      backSpeed: 150,
-      smartBackspace: true,
-      showCursor: true,
-      loop: true,
-    });
+  // useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: ["Front End Developer."],
+  //     startDelay: 300,
+  //     typeSpeed: 150,
+  //     backDelay: 150,
+  //     backSpeed: 150,
+  //     smartBackspace: true,
+  //     showCursor: true,
+  //     loop: true,
+  //   });
 
-    // Destroy
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+  //   // Destroy
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
 
   const handleScroll = () => {
     window.scrollTo({
@@ -47,9 +48,10 @@ const Home = () => {
           <h1 className="font-bold text-6xl">Md. Jobayer Akanda</h1>
           <h2 className="mt-3 text-3xl font-bold">
             I'm a
-            <span className="text-primary text-4xl ml-1" ref={el}>
+            <ReactTypingEffect className="text-primary text-4xl ml-1" eraseSpeed={200} eraseDelay={400} typingDelay={400}  text={["Front End Developer."]} />
+            {/* <span className="text-primary text-4xl ml-1" ref={el}>
               {" "}
-            </span>
+            </span> */}
           </h2>
         </div>
         <div className="mouse" onClick={() => handleScroll()}>
