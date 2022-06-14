@@ -53,7 +53,7 @@ const ResumeDetail = () => {
         {/* education skills experience */}
         <div>
           <div ref={eduRef} id="education" className="edu-info">
-            <div>
+            <div className="mb-5">
               <div className="mb-9">
                 <h2 className="text-primary text-4xl font-bold">Education</h2>
               </div>
@@ -77,7 +77,7 @@ const ResumeDetail = () => {
             </div>
 
             {/* Polytechnic */}
-            <div>
+            <div className="mb-5">
               <div className="flex flex-cols gap-6 pb-3 edu-box">
                 <FontAwesomeIcon
                   className="education-icon bg-primary my-2 text-white p-3"
