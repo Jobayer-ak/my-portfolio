@@ -9,7 +9,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="container mx-auto mt-12 px-12">
+    <div id="contact" className="container mx-auto mt-12 px-12">
       <h2 className="text-center text-5xl font-bold my-3">Contact Me</h2>
       
 

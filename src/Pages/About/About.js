@@ -8,11 +8,8 @@ import pdf from "../../CV/Resume-of-Jobayer-1.pdf";
 
 const About = () => {
   return (
-    <div className="container mx-auto px-12">
-      <div
-        id="about"
-        className="grid md:grid-cols-1 lg:grid-cols-2 gap-5 py-7"
-      >
+    <div id="about" className="container mx-auto px-12">
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5 py-7">
         <div className="p-3 md:pr-10 lg:p-8">
           <img src={image} className="image"></img>
         </div>
