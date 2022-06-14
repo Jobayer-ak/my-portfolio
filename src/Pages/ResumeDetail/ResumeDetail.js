@@ -30,7 +30,7 @@ const ResumeDetail = () => {
   };
 
   return (
-    <div className="container mx-auto px-12 pt-20">
+    <div className="container mx-auto px-12 lg:pt-20">
       <div className="sm:flex md:flex-cols lg:flex-cols py-7 sm:gap-4 md:gap-10 lg:gap-10">
         {/* sidebar menu */}
         <div className="side-menu ">
@@ -52,8 +52,8 @@ const ResumeDetail = () => {
 
         {/* education skills experience */}
         <div>
-          <div ref={eduRef} id="education">
-            <div className="edu-info">
+          <div ref={eduRef} id="education" className="edu-info">
+            <div>
               <div className="mb-9">
                 <h2 className="text-primary text-4xl font-bold">Education</h2>
               </div>
@@ -77,7 +77,7 @@ const ResumeDetail = () => {
             </div>
 
             {/* Polytechnic */}
-            <div className="edu-info">
+            <div>
               <div className="flex flex-cols gap-6 pb-3 edu-box">
                 <FontAwesomeIcon
                   className="education-icon bg-primary my-2 text-white p-3"
@@ -101,7 +101,7 @@ const ResumeDetail = () => {
 
             {/* School */}
 
-            <div className="edu-info">
+            <div>
               <div className="flex flex-cols gap-6 pb-3 edu-box">
                 <FontAwesomeIcon
                   className="education-icon bg-primary my-2 text-white p-3"
@@ -123,15 +123,14 @@ const ResumeDetail = () => {
               </div>
             </div>
 
-            {/* skills  */}
           </div>
 
           {/* skills */}
           <div ref={skillsRef} id="skills" className="skills-info">
-            <div className="mb-9">
+            <div className="mb-9  section_heading">
               <h2 className="text-primary text-4xl font-bold">Skills</h2>
             </div>
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
               <div>
                 <div className="text-center bg-base-100 shadow-2xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">HTML</h2>
@@ -211,7 +210,7 @@ const ResumeDetail = () => {
             </div>
 
             {/* progress bar*/}
-            <div className="grid grid-cols-2 gap-8 py-10">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mt-7 py-10">
               <div>
                 <div className="flex flex-cols justify-between px-2">
                   <h2 className="text-2xl font-bold">React Js</h2>
@@ -260,6 +259,59 @@ const ResumeDetail = () => {
                 ></progress>
               </div>
             </div>
+
+            {/* Familiar with Backend skills */}
+            <div>
+              <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <div className="flex flex-cols justify-between px-2">
+                  <h2 className="text-2xl font-bold">Node Js</h2>
+                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                </div>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="50"
+                  max="100"
+                ></progress>
+              </div>
+
+              <div>
+                <div className="flex flex-cols justify-between px-2">
+                  <h2 className="text-2xl font-bold">ExpressJs</h2>
+                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                </div>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="50"
+                  max="100"
+                ></progress>
+              </div>
+
+              <div>
+                <div className="flex flex-cols justify-between px-2">
+                  <h2 className="text-2xl font-bold">Type Script</h2>
+                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                </div>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="50"
+                  max="100"
+                ></progress>
+              </div>
+
+              <div>
+                <div className="flex flex-cols justify-between px-2">
+                  <h2 className="text-2xl font-bold">MongoDB</h2>
+                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                </div>
+                <progress
+                  className="progress progress-primary w-90"
+                  value="50"
+                  max="100"
+                ></progress>
+              </div>
+            </div>
+            </div>
           </div>
 
           {/* projects */}
@@ -267,7 +319,7 @@ const ResumeDetail = () => {
             <h2 className="text-4xl text-primary font-bold text-center my-7">
               Projects
             </h2>
-            <div className="grid grid-cols-2 gap-5 shadow-lg p-3">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5 shadow-lg p-3">
               <div className="project shadow-2xl">
                 <img src={image1} alt="Avatar" className="project_image" />
                 <div className="overlay">
@@ -316,7 +368,7 @@ const ResumeDetail = () => {
 
     {/* Modal */}
       <input type="checkbox" id="my-modal-6" className="modal-toggle" />
-      <div className="modal modal-bottom sm:modal-middle">
+      <div className="modal modal-top sm:modal-middle">
         <div className="modal-box">
           <h3 className="text-xl text-primary font-bold">Features:</h3>
           <p className="pb-3">{loadDetails.features}</p>

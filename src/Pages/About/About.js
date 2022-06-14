@@ -9,7 +9,10 @@ import pdf from "../../CV/Resume-of-Jobayer-1.pdf";
 const About = () => {
   return (
     <div className="container mx-auto px-12">
-      <div id="about" className="sm:flex md:flex-cols lg:flex-cols justify-between items-center py-7">
+      <div
+        id="about"
+        className="grid md:grid-cols-1 lg:grid-cols-2 gap-5 py-7"
+      >
         <div className="p-3 md:pr-10 lg:p-8">
           <img src={image} className="image"></img>
         </div>
@@ -17,8 +20,10 @@ const About = () => {
         <div className="aboutMe lg:p-10">
           <h2 className="text-bold text-5xl font-bold mb-5">About Me</h2>
           <p className="pb-5">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
+            To take a challenging role as Front End Web Developer in a highly
+            technical company where I could utilize my skills in Web Design,
+            Front-End Web Development and use these skills in providing quality
+            service to the company.
           </p>
           <div className="flex flex-row">
             <div className="basis-2/6">

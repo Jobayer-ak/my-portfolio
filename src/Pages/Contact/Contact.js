@@ -11,13 +11,10 @@ const Contact = () => {
   return (
     <div className="container mx-auto mt-12 px-12">
       <h2 className="text-center text-5xl font-bold my-3">Contact Me</h2>
-      <p className="text-center text-secondary">
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia
-      </p>
+      
 
-      <div className="flex flex-cols justify-between items-center gap-7 my-12">
-        <div className="text-center w-96 shadow-2xl p-9">
+      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-7 my-10">
+        <div className="text-center lg:w-96 shadow-2xl py-7">
           <div className="flex flex-col justify-center items-center icon_parent">
             <FontAwesomeIcon
               className= "icon"
@@ -25,9 +22,9 @@ const Contact = () => {
             />
           </div>
           <h4 className="text-xl font-bold my-5">Address</h4>
-          <p className="text-secondary">Tarakanda, Mymensingh, Bangladesh</p>
+          <p className="text-secondary px-5">Tarakanda, Mymensingh, Bangladesh</p>
         </div>
-        <div className="text-center w-96 shadow-2xl p-9">
+        <div className="text-center lg:w-96 shadow-2xl p-9">
           <div className="flex flex-col justify-center items-center icon_parent">
             <FontAwesomeIcon
               className= "icon"
@@ -37,7 +34,7 @@ const Contact = () => {
           <h4 className="text-xl font-bold my-5">Phone Number</h4>
           <a className="text-secondary" href="tel://8801725008757">+880 1725 008757</a>
         </div>
-        <div className="text-center w-96 shadow-2xl p-9">
+        <div className="text-center lg:w-96 shadow-2xl p-9">
           <div className="flex flex-col justify-center items-center icon_parent">
             <FontAwesomeIcon
               className= "icon"

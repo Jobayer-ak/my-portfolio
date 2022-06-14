@@ -73,24 +73,36 @@ a:hover{
 
   @media only screen and (max-width: 640px){
     .side-menu{
-        padding-top: 0px;
+        padding-top: 10px;
     }
-      .edu-info{
+    .edu-info{
         padding-top: 40px;
         padding-left: 0px;
         margin-bottom: 40px;
-      }
+    }
+    .skills-info{
+        padding-left: 0px;
+        margin-top: 0px;
+    }
   }
 
   @media only screen and (max-width: 768px){
     .side-menu{
-        padding-top: 100px;
+        padding-top: 10px;
     }
-    .edu-info{
-      padding-top: 40px;
+    .section_heading{
+        text-align: center;
+    }
+    .eddu-info{
+      padding-top: 0px;
       padding-left: 0px;
-      margin-bottom: 40px;
+      margin-bottom: 0px;
     }
+    .skills-info{
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    
 }
 /* 
 https://www.kindacode.com/article/react-router-how-to-highlight-active-link/

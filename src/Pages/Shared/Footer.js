@@ -16,20 +16,19 @@ const Footer = () => {
   return (
     <div id="footer">
       <div className="container mx-auto px-12">
-        <div className="flex flex-row gap-7">
+        <div className="grid md:grid-cols-1 lg:grid-cols-4 md:gap-2 lg:gap-8">
           {/* About Section */}
-          <div className="basis-1/4 p-4">
+          <div className="p-2">
             <div className="text-center">
               <h2 className="text-white text-2xl mb-5 py-4">About</h2>
               <p className="text-secondary">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                I am a passionate Front End Developer.
               </p>
             </div>
           </div>
 
           {/* Links */}
-          <div className="basis-1/4 p-4">
+          <div className="p-4">
             <h2 className="text-white text-2xl mb-5 py-4">Links</h2>
             <ul className="links">
               <li>
@@ -45,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* Service */}
-          <div className="basis-1/4 p-4">
+          <div className="p-4">
             <h2 className="text-white text-2xl mb-5 py-4">Services</h2>
             <ul className="links">
               <li>
@@ -61,7 +60,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="basis-1/4 p-4">
+          <div className="p-4">
             <h2 className="text-white text-2xl mb-5 py-4">Have A Question?</h2>
             <div className="flex flex-cols justify-between gap-4">
               <a href="https://www.facebook.com" target="_blank">
