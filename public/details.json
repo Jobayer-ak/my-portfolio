@@ -1,26 +1,54 @@
 [
     {
         "id": 1,
+        "slider_1": "https://i.ibb.co/0DFCQVr/ak-1.png",
+        "slider_2": "https://i.ibb.co/3RJfrPN/ak-2.png",
+        "slider_3": "https://i.ibb.co/pQz6RrQ/ak-3.png",
+        "slider_4": "https://i.ibb.co/JCBvh4C/ak-4.png",
         "name": "ak-accessories",
         "features": "This is Simple manufacturer website.It is a responsive design for mobile, tablet, and large screen display. This app has login, registration, backend CRUD operation, admin panel, and payment system. You can order parts, delete order before payment, see your orders, confirmation toast and etc.",
-        "technology": "HTML5, CSS3, twailwind css, daisyui, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), stripe payment, firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). "
+        "technology": "HTML5, CSS3, twailwind css, daisyui, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), stripe payment, firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). ",
+        "live_link": "https://ak-accessories.firebaseapp.com/",
+        "client_side_code": "https://github.com/Jobayer-ak/ak-accessories",
+        "server_side_code": "https://github.com/Jobayer-ak/ak-accessories-server-side"
     },
     {
         "id":2,
+        "slider_1": "https://i.ibb.co/j391DXh/e-1.png",
+        "slider_2": "https://i.ibb.co/HY1S4MN/e-2.png",
+        "slider_3": "https://i.ibb.co/WgY17Vp/e-3.png",
+        "slider_4": "https://i.ibb.co/kSyt64k/e-4.png",
         "name": "e-warehouse",
         "features": "It is online warehouse website.It is a responsive design for mobile, tablet, and large screen display. This app has login, registration. You can store products, delete product, update product, see your stored products.",
-        "technology": "HTML5, CSS3, Bootstrap-5, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). "
+        "technology": "HTML5, CSS3, Bootstrap-5, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). ",
+        "live_link": "https://e-warehouse-management.firebaseapp.com/",
+        "client_side_code": "https://github.com/Jobayer-ak/e-warehouse",
+        "server_side_code": "https://github.com/Jobayer-ak/e-warehouse-server-side"
     },
     {
         "id": 3,
+        "slider_1": "https://i.ibb.co/CskkZV0/p-1.png",
+        "slider_2": "https://i.ibb.co/d5VQsqS/p-2.png",
+        "slider_3": "https://i.ibb.co/FVGVdc0/p-3.png",
+        "slider_4": "https://i.ibb.co/S5Wdv04/p-4.png",
         "name": "Photographer Guy",
         "features": "This is Photographer portfolio. It is a SPA React app. It has been desigen with Bootstrap-5. Anyone can signin and register on this site with email and password also with google as well as social site. And check photographer price according to the category. If someone wants to contact with photographer, he/she can contact trough fill up a contact page!",
-        "technology": "HTML5, CSS3, Bootstrap-5, JavaScipt, ReactJs, firebase authentication for login authentication and deploy"
+        "technology": "HTML5, CSS3, Bootstrap-5, JavaScipt, ReactJs, firebase authentication for login authentication and deploy", 
+        "live_link": "https://photographer-guy-a10.firebaseapp.com/",
+        "client_side_code": "https://github.com/Jobayer-ak/photographer-guy",
+        "server_side_code": ""
     },
     {
         "id": 4,
-        "name": "Orchid Convention Center",
+        "slider_1": "https://i.ibb.co/Rg2PVT5/t-1.png",
+        "slider_2": "https://i.ibb.co/MskxZSk/t-2.png",
+        "slider_3": "https://i.ibb.co/3RkyVH8/t-3.png",
+        "slider_4": "https://i.ibb.co/0cbP4w4/t-4.png",
+        "name": "Tech Analytica",
         "features": "This is simple responsice design with Bootstrap. This design cosists carousel, card, navbar,  footer, accordion and CSS3 animation",
-        "technology": "HTML5, CSS3, Bootstrap-5, and netlify for deploy!"
+        "technology": "HTML5, CSS3, Bootstrap-5, and netlify for deploy!", 
+        "live_link": "https://tech-analytica.netlify.app/",
+        "client_side_code": "https://github.com/Jobayer-ak/tech-analytica.git",
+        "server_side_code": ""
     }
 ]
