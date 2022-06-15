@@ -54,7 +54,7 @@ const Contact = () => {
       </div>
 
       {/* Form */}
-      <div className="grid md:grid-col-1 grid-cols-2 gap-4 items-center bg-slate-100">
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-4 items-center bg-slate-100">
         <div className="p-3 md:pr-10 lg:p-8">
           <img src={image} className="image"></img>
         </div>
@@ -63,7 +63,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
-              className="border p-3 rounded-md w-96 max-w-md"
+              className="border p-3 rounded-md md:w-50 lg:w-96 max-w-md"
               placeholder="Your Name"
               {...register("example")}
             />
@@ -72,7 +72,7 @@ const Contact = () => {
 
             <input
               type="email"
-              className="p-3 border rounded-md w-96 max-w-md"
+              className="p-3 border rounded-md md:w-50 lg:w-96 max-w-md"
               placeholder="Email"
               {...register("exampleRequired", { required: true })}
             />
@@ -81,7 +81,7 @@ const Contact = () => {
 
             <input
               type="text"
-              className="border p-3 rounded-md w-96 max-w-md"
+              className="border p-3 rounded-md md:w-50 lg:w-96  max-w-md"
               placeholder="Subject"
               {...register("example")}
             />
@@ -91,9 +91,10 @@ const Contact = () => {
 
             <textarea
               type="text"
-              className="border p-3 rounded-md w-96 max-w-md"
+              className="border p-3 rounded-md md:w-50 lg:w-96"
               placeholder="Your Message"
               rows={4}
+              cols={24}
               {...register("exampleRequired", { required: true })}
             />
             <br />
@@ -103,7 +104,7 @@ const Contact = () => {
               {errors.exampleRequired && <span>This field is required</span>}
             </p>
 
-            <input className="btn btn-primary" type="submit" />
+            <input className="btn btn-primary mb-5" type="submit" />
           </form>
         </div>
       </div>

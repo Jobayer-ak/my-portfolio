@@ -5,12 +5,19 @@ import {
   faArrowRightLong,
   faEnvelope,
   faLocationDot,
-  faPhone
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import {fab, faFacebookF, faGit, faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {
+  fab,
+  faFacebookF,
+  faGit,
+  faGithub,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import "./Footer.css";
-
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -32,14 +39,31 @@ const Footer = () => {
             <h2 className="text-white text-2xl mb-5 py-4">Links</h2>
             <ul className="links">
               <li>
-                <a href="#"><FontAwesomeIcon icon={faArrowRightLong} className="pr-2"/>Home</a>
+                <HashLink to="/#home">
+                    <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                    Home
+                
+                </HashLink>
               </li>
               <li>
-                <a href="#"><FontAwesomeIcon icon={faArrowRightLong} className="pr-2"/>About</a>
+                <HashLink to="/#about">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                  About
+                </HashLink>
               </li>
               <li>
-                <a href="#"><FontAwesomeIcon icon={faArrowRightLong} className="pr-2"/>Contact</a>
+                <HashLink to="/#projects">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                  Projects
+                </HashLink>
               </li>
+              <li>
+                <HashLink to="/#contact">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                  Contact
+                </HashLink>
+              </li>
+              
             </ul>
           </div>
 
@@ -48,13 +72,28 @@ const Footer = () => {
             <h2 className="text-white text-2xl mb-5 py-4">Services</h2>
             <ul className="links">
               <li>
-                <a href="#"><FontAwesomeIcon icon={faArrowRightLong} className="pr-2"/>Web Design</a>
+                <HashLink to="#services">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                  Web Design
+                </HashLink>
               </li>
               <li>
-                <a href="#"><FontAwesomeIcon icon={faArrowRightLong} className="pr-2"/>PSD TO HTML</a>
+                <HashLink to="/#services">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                  PSD TO HTML
+                </HashLink>
               </li>
               <li>
-                <a href="#"><FontAwesomeIcon icon={faArrowRightLong} className="pr-2"/>Web Development</a>
+                <HashLink to="/#services">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                  Web Development
+                </HashLink>
+              </li>
+              <li>
+                <HashLink to="/#services">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
+                  Design From Scratch
+                </HashLink>
               </li>
             </ul>
           </div>
@@ -75,27 +114,39 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-cols my-4">
-              <a href="https://www.twitter.com" className="pr-1" target="_blank">
+              <a
+                href="https://www.twitter.com"
+                className="pr-1"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   className="text-xl text-white"
                   icon={faPhone}
                 />
               </a>
-                <a href="tel://8801725008757" className="pl-3 phone">
-                  +880 1725 008757
-                </a>
+              <a href="tel://8801725008757" className="pl-3 phone">
+                +880 1725 008757
+              </a>
             </div>
 
             <div className="flex flex-cols my-3">
-              <a href="https://www.twitter.com" className="pr-1" target="_blank">
+              <a
+                href="https://www.twitter.com"
+                className="pr-1"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   className="text-xl text-white"
                   icon={faEnvelope}
                 />
               </a>
-                <a href="https://www.gmail.com" target="_blank" className="pl-3 mail">
-                  jobayer.ak@gmail.com
-                </a>
+              <a
+                href="https://www.gmail.com"
+                target="_blank"
+                className="pl-3 mail"
+              >
+                jobayer.ak@gmail.com
+              </a>
             </div>
           </div>
         </div>
@@ -104,19 +155,25 @@ const Footer = () => {
         <div className="flex flex-cols justify-center items-center gap-10 py-2 social-links">
           <div>
             <a href="https://www.facebook.com" target="_blank">
-                <FontAwesomeIcon icon={faFacebookF} className="text-white text-3xl social_icon" />
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                className="text-white text-3xl social_icon"
+              />
             </a>
           </div>
           <div>
             <a href="https://www.linkedin.com/in/jobayer-ak" target="_blank">
-            <FontAwesomeIcon icon={faLinkedinIn} className="text-white text-3xl social_icon"/>
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                className="text-white text-3xl social_icon"
+              />
             </a>
           </div>
           <div>
             <a href="https://github.com/Jobayer-ak" target="_blank">
               <FontAwesomeIcon
                 className="text-white text-3xl social_icon"
-                icon={faGithub} 
+                icon={faGithub}
               />
             </a>
           </div>
@@ -124,7 +181,9 @@ const Footer = () => {
 
         {/* copy rights */}
         <div className="mt-6 pb-4">
-          <p className="text-center text-secondary">Copyright &copy;2022 | All right reserved by Jobayer</p>
+          <p className="text-center text-secondary">
+            Copyright &copy;2022 | All right reserved by Jobayer
+          </p>
         </div>
       </div>
     </div>

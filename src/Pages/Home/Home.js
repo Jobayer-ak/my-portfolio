@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div id="home">
       <div className="bg-wrap">
         <div className="text-center flex flex-col justify-center items-center animate-box">
           <p className="text-primary text-xl font-bold tracking-widest uppercase">

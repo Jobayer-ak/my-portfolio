@@ -271,7 +271,7 @@ const ResumeDetail = () => {
 
             {/* Familiar with Backend skills */}
             <div>
-              <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
                 <div>
                   <div className="flex flex-cols justify-between px-2">
                     <h2 className="text-2xl font-bold">Node Js</h2>
@@ -335,27 +335,6 @@ const ResumeDetail = () => {
           </div>
         </div>
       </div>
-
-      {/* Modal */}
-      {/* <input type="checkbox" id="my-modal-6" className="modal-toggle" />
-      <div className="modal modal-top sm:modal-middle">
-        <div className="modal-box">
-          <h3 className="text-xl text-primary font-bold">Features:</h3>
-          <p className="pb-3">{loadDetails.features}</p>
-          <h4 className="text-xl text-primary font-bold">Technology:</h4>
-          <p>{loadDetails.technology}</p>
-          
-          <a className="btn btn-sm btn-primary text-center mr-2" href="https://github.com/Jobayer-ak/photographer-guy" target="_blank">Code Link</a>
-
-          <a className="btn btn-sm btn-primary text-center" href="https://github.com/Jobayer-ak/photographer-guy" target="_blank">Code Link</a>
-          
-          <div className="modal-action">
-            <label htmlFor="my-modal-6" className="btn btn-primary btn-md">
-              Close
-            </label>
-          </div>
-        </div>
-      </div> */}
       
     </div>
   );

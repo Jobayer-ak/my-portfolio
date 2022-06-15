@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import useDetails from "../../../hooks/useDetails";
-import ProjectDetails from "../ProjectDetails";
 
 const Projects = ({ item }) => {
+  //hooks
   const [details] = useDetails();
   const navigate = useNavigate();
 
@@ -12,17 +12,11 @@ const Projects = ({ item }) => {
   
   const handleDetails = (ID) =>{
     const project_details = details.find((detail) => ID === detail.id);
+
+    // send data as props with link
     navigate("/projectDetails" , { state: project_details});
   }
 
- 
-
-  // const handleDetails = (ID)=>{
-  //   const project_details = details.find((detail) => ID === detail.id);
-  //   // <ProjectDetails project_details={project_details}></ProjectDetails>
-  //   console.log(project_details);
-  //   navigate("/projectDetails" , {state: {project_details: project_details}})
-  // }
 
   return (
     <div className="project shadow-2xl">
@@ -30,13 +24,12 @@ const Projects = ({ item }) => {
       <div className="overlay">
         <div className="text" >
             <button 
-            className="btn modal-button text-accent"
+            className="btn btn-secondary  text-white"
             onClick={()=>handleDetails(id)}
              
             >Details</button>
           
-          
-         {/* {<ProjectDetails project_details={project_details}></ProjectDetails>} */}
+       
         </div>
       </div>
     </div>

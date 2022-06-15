@@ -32,11 +32,6 @@ const Navbar = () => {
       </> 
       )
   
-    
-    // const clsName = "bg_color";
-    // const emptyClass = "";
-    // const locationName = window.location.pathname;
-    // console.log(locationName)
   return (
     <div className="bg_color">
         <div className="navbar container mx-auto px-12">
@@ -65,11 +60,12 @@ const Navbar = () => {
                 {menuItmes}
               </ul>
             </div>
-            <Link to="/" className="navbar-brand md:text-center font-bold"><span className="single text-3xl text-white ">J</span>obayer</Link>
+            <Link to="/" className="navbar-brand md:text-end font-bold ml-10"><span className="single text-3xl text-white ">J</span>obayer</Link>
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal items p-0">
               {location.pathname ==="/projectDetails" ? desabledMenu : menuItmes}
+              
             </ul>
           </div>
           {/* <div className="navbar-end">

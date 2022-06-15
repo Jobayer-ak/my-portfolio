@@ -69,8 +69,8 @@ const ProjectDetails = () => {
             )}
           </div>
 
-          <div className="px-5">
-            <h4 className="text-3xl text-primary font-bold text-center mb-4">
+          <div className="px-5 py-4">
+            <h4 className="text-3xl text-primary font-bold text-center mb-12">
               {name}
             </h4>
             <div className="mx-start">
@@ -86,7 +86,7 @@ const ProjectDetails = () => {
               <li className="mb-4">{backEnd}</li>
 
               {/* buttons */}
-              <div className="md:flex md:flex-cols lg:flex-cols justify-around gap-7 py-5">
+              <div className="md:flex md:flex-cols lg:flex-cols justify-around gap-7 py-5 mt-12">
                 <a href={live_link} target="_blank" className="btn btn-primary link_button">Live Link</a>
                 <a href={client_code} target="_blank" className="btn btn-primary link_button">Client Code Link</a>
                 <a href={server_code} target="_blank" className="btn btn-primary link_button"
