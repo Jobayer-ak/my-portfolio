@@ -52,7 +52,7 @@ const Home = () => {
       <ResumeDetail></ResumeDetail>
       <Services></Services>
       <Contact></Contact>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

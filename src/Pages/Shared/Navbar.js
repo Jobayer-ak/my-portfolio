@@ -1,27 +1,42 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const location = useLocation();
+
     const menuItmes = (
         <>
             <li>
                 <Link to="/">Home</Link>
             </li>
+            
             <li>
                 <HashLink smooth to="#about">About</HashLink>
             </li>
+            
             <li>
                 <HashLink smooth to="#contact">Contact</HashLink>
             </li>
+            
         </>
     )
+
+    const desabledMenu = (
+      <>
+          <li className="bg-sky-500/80 hover:bg-sky-700/80 rounded-md">
+              <Link to="/" className="text-white hover:text-white">Back To Home Page</Link>
+          </li>
+          
+      </> 
+      )
+  
     
-    const clsName = "bg_color";
-    const emptyClass = "";
-    const locationName = window.location.pathname;
-    console.log(locationName)
+    // const clsName = "bg_color";
+    // const emptyClass = "";
+    // const locationName = window.location.pathname;
+    // console.log(locationName)
   return (
     <div className="bg_color">
         <div className="navbar container mx-auto px-12">
@@ -54,7 +69,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal items p-0">
-              {menuItmes}
+              {location.pathname ==="/projectDetails" ? desabledMenu : menuItmes}
             </ul>
           </div>
           {/* <div className="navbar-end">

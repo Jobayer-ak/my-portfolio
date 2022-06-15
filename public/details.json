@@ -1,26 +1,27 @@
 [
     {
         "id": 1,
+        "name": "ak-accessories",
         "slider_1": "https://i.ibb.co/0DFCQVr/ak-1.png",
         "slider_2": "https://i.ibb.co/3RJfrPN/ak-2.png",
         "slider_3": "https://i.ibb.co/pQz6RrQ/ak-3.png",
         "slider_4": "https://i.ibb.co/JCBvh4C/ak-4.png",
-        "name": "ak-accessories",
-        "features": "This is Simple manufacturer website.It is a responsive design for mobile, tablet, and large screen display. This app has login, registration, backend CRUD operation, admin panel, and payment system. You can order parts, delete order before payment, see your orders, confirmation toast and etc.",
-        "technology": "HTML5, CSS3, twailwind css, daisyui, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), stripe payment, firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). ",
+        "features": "Login, Logout, registration, backend CRUD operation and admin panel. Customer can order parts, delete order, see his/her orders, confirmation toast, private routes, and etc. Admin can make any admin, add parts, handle orders. Responsive design for mobile, tablet, and large screen display.",        "front_end": "HTML5, CSS3, twailwind css, daisyui, Javascript, ReactJs",
+        "back_end": "NodeJs, expressJs, MongoDB(database), JWT, firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy).",
         "live_link": "https://ak-accessories.firebaseapp.com/",
         "client_side_code": "https://github.com/Jobayer-ak/ak-accessories",
         "server_side_code": "https://github.com/Jobayer-ak/ak-accessories-server-side"
     },
     {
         "id":2,
+        "name": "e-warehouse",
         "slider_1": "https://i.ibb.co/j391DXh/e-1.png",
         "slider_2": "https://i.ibb.co/HY1S4MN/e-2.png",
         "slider_3": "https://i.ibb.co/WgY17Vp/e-3.png",
         "slider_4": "https://i.ibb.co/kSyt64k/e-4.png",
-        "name": "e-warehouse",
-        "features": "It is online warehouse website.It is a responsive design for mobile, tablet, and large screen display. This app has login, registration. You can store products, delete product, update product, see your stored products.",
-        "technology": "HTML5, CSS3, Bootstrap-5, Javascript, ReactJs, JWT, NodeJs, expressJs, MongoDB(database), firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). ",
+        "features": "Responsive design for mobile, tablet, and large screen. Login, logout, registration, Email verification, private routes, confirmation toast and etc. Store product, delete product, update product, see your stored products.",
+        "front_end": "HTML5, CSS3, Bootstrap-5, Javascript, ReactJs",
+        "back_end": "NodeJs, expressJs, MongoDB(database), JWT, firebase authentication, firebasehosting (client-side deploy), heroku (server-side deploy). ",
         "live_link": "https://e-warehouse-management.firebaseapp.com/",
         "client_side_code": "https://github.com/Jobayer-ak/e-warehouse",
         "server_side_code": "https://github.com/Jobayer-ak/e-warehouse-server-side"
@@ -32,11 +33,12 @@
         "slider_3": "https://i.ibb.co/FVGVdc0/p-3.png",
         "slider_4": "https://i.ibb.co/S5Wdv04/p-4.png",
         "name": "Photographer Guy",
-        "features": "This is Photographer portfolio. It is a SPA React app. It has been desigen with Bootstrap-5. Anyone can signin and register on this site with email and password also with google as well as social site. And check photographer price according to the category. If someone wants to contact with photographer, he/she can contact trough fill up a contact page!",
-        "technology": "HTML5, CSS3, Bootstrap-5, JavaScipt, ReactJs, firebase authentication for login authentication and deploy", 
+        "features": "This is Photographer portfolio. It is a SPA React app. It has been desigened with Bootstrap-5. Anyone can signin and register on this site with email and password also with google as well as social site. And check photographer price according to the category. If someone wants to contact with photographer, he/she can contact trough fill up a contact page!",
+        "front_end": "HTML5, CSS3, Bootstrap-5, JavaScipt, ReactJs, firebase authentication for login authentication and deploy", 
+        "back_end": "No Back End Functionality",
         "live_link": "https://photographer-guy-a10.firebaseapp.com/",
         "client_side_code": "https://github.com/Jobayer-ak/photographer-guy",
-        "server_side_code": ""
+        "server_side_code": "No"
     },
     {
         "id": 4,
@@ -45,10 +47,11 @@
         "slider_3": "https://i.ibb.co/3RkyVH8/t-3.png",
         "slider_4": "https://i.ibb.co/0cbP4w4/t-4.png",
         "name": "Tech Analytica",
-        "features": "This is simple responsice design with Bootstrap. This design cosists carousel, card, navbar,  footer, accordion and CSS3 animation",
-        "technology": "HTML5, CSS3, Bootstrap-5, and netlify for deploy!", 
+        "features": "This is simple responsice design with Bootstrap-5. Line chart and bar chart have been used on this site. It has few reviews inside bootstrap card and shows with conditional rendering",
+        "front_end": "HTML5, CSS3, Bootstrap-5, JavaScript, ReactJs, Axios and netlify for deploy", 
+        "back_end": "No Back End Functionality",
         "live_link": "https://tech-analytica.netlify.app/",
         "client_side_code": "https://github.com/Jobayer-ak/tech-analytica.git",
-        "server_side_code": ""
+        "server_side_code": "No"
     }
 ]

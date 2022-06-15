@@ -18,9 +18,7 @@ const About = () => {
           <h2 className="text-bold text-5xl font-bold mb-5">About Me</h2>
           <p className="pb-5">
             To take a challenging role as Front End Web Developer in a highly
-            technical company where I could utilize my skills in Web Design,
-            Front-End Web Development and use these skills in providing quality
-            service to the company.
+            technical company where I could utilize my skills in Web Design, Web Development, and use these skills in providing quality service to the company.
           </p>
           <div className="flex flex-row">
             <div className="basis-2/6">

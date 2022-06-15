@@ -15,7 +15,7 @@ const Projects = ({ item }) => {
     navigate("/projectDetails" , { state: project_details});
   }
 
-  // console.log(det)
+ 
 
   // const handleDetails = (ID)=>{
   //   const project_details = details.find((detail) => ID === detail.id);
