@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import image1 from "../../Images/Screenshot1.png";
@@ -9,24 +9,26 @@ import image4 from "../../Images/Screenshot4.png";
 import "./ResumeDetail.css";
 import useDetails from "../../hooks/useDetails";
 import { useInView } from "react-intersection-observer";
+import Projects from "../ProjectDetails/Projects/Projects";
+import useProjects from "../../hooks/useProjects";
 
 const ResumeDetail = () => {
   //hooks
   const [details] = useDetails();
   const [loadDetails, setLoadDetails] = useState("");
+  const [single] = useProjects();
+  const navigate = useNavigate();
   // const myRef = useRef();
-  const { ref:eduRef, inView: eduIsVisible} = useInView();
-  const {ref:skillsRef, inView: skillsIsVisible} = useInView();
-  const {ref:projectsRef, inView: projectsIsVisible} = useInView();
- 
+  const { ref: eduRef, inView: eduIsVisible } = useInView();
+  const { ref: skillsRef, inView: skillsIsVisible } = useInView();
+  const { ref: projectsRef, inView: projectsIsVisible } = useInView();
 
   // console.log(eduIsVisible);
-  
+
   const handleDetails = (details_id) => {
     const project_details = details.find((detail) => details_id === detail.id);
-    
-    setLoadDetails(project_details);    
 
+    setLoadDetails(project_details);
   };
 
   return (
@@ -39,13 +41,28 @@ const ResumeDetail = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 sticky top-20"
           >
             <li className="font-bold">
-              <a className={eduIsVisible? "text-primary": ""} href="#education">Education</a>
+              <a
+                className={eduIsVisible ? "text-primary" : ""}
+                href="#education"
+              >
+                Education
+              </a>
             </li>
             <li className="font-bold my-5">
-              <a className={skillsIsVisible? "text-primary": ""}  href="#skills">Skills</a>
+              <a
+                className={skillsIsVisible ? "text-primary" : ""}
+                href="#skills"
+              >
+                Skills
+              </a>
             </li>
             <li className="font-bold">
-              <a className={projectsIsVisible? "text-primary": ""}  href="#projects">Projects</a>
+              <a
+                className={projectsIsVisible ? "text-primary" : ""}
+                href="#projects"
+              >
+                Projects
+              </a>
             </li>
           </ul>
         </div>
@@ -71,7 +88,6 @@ const ResumeDetail = () => {
                   <h3 className="text-xl font-bold py-2">
                     Changde Vocational Technical College, Hunan, China
                   </h3>
-                  
                 </div>
               </div>
             </div>
@@ -94,7 +110,6 @@ const ResumeDetail = () => {
                   <h3 className="text-xl font-bold py-2">
                     Shyamoli Ideal Polytechnic Institute, Dhaka, Bangladesh
                   </h3>
-                  
                 </div>
               </div>
             </div>
@@ -118,11 +133,9 @@ const ResumeDetail = () => {
                   <h3 className="text-xl font-bold py-2">
                     Taldighi High School, Tarakanada, Mymensingh, Bangladesh
                   </h3>
-                  
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* skills */}
@@ -263,54 +276,54 @@ const ResumeDetail = () => {
             {/* Familiar with Backend skills */}
             <div>
               <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
-              <div>
-                <div className="flex flex-cols justify-between px-2">
-                  <h2 className="text-2xl font-bold">Node Js</h2>
-                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                <div>
+                  <div className="flex flex-cols justify-between px-2">
+                    <h2 className="text-2xl font-bold">Node Js</h2>
+                    <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                  </div>
+                  <progress
+                    className="progress progress-primary w-90"
+                    value="50"
+                    max="100"
+                  ></progress>
                 </div>
-                <progress
-                  className="progress progress-primary w-90"
-                  value="50"
-                  max="100"
-                ></progress>
-              </div>
 
-              <div>
-                <div className="flex flex-cols justify-between px-2">
-                  <h2 className="text-2xl font-bold">ExpressJs</h2>
-                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                <div>
+                  <div className="flex flex-cols justify-between px-2">
+                    <h2 className="text-2xl font-bold">ExpressJs</h2>
+                    <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                  </div>
+                  <progress
+                    className="progress progress-primary w-90"
+                    value="50"
+                    max="100"
+                  ></progress>
                 </div>
-                <progress
-                  className="progress progress-primary w-90"
-                  value="50"
-                  max="100"
-                ></progress>
-              </div>
 
-              <div>
-                <div className="flex flex-cols justify-between px-2">
-                  <h2 className="text-2xl font-bold">Type Script</h2>
-                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                <div>
+                  <div className="flex flex-cols justify-between px-2">
+                    <h2 className="text-2xl font-bold">Type Script</h2>
+                    <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                  </div>
+                  <progress
+                    className="progress progress-primary w-90"
+                    value="50"
+                    max="100"
+                  ></progress>
                 </div>
-                <progress
-                  className="progress progress-primary w-90"
-                  value="50"
-                  max="100"
-                ></progress>
-              </div>
 
-              <div>
-                <div className="flex flex-cols justify-between px-2">
-                  <h2 className="text-2xl font-bold">MongoDB</h2>
-                  <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                <div>
+                  <div className="flex flex-cols justify-between px-2">
+                    <h2 className="text-2xl font-bold">MongoDB</h2>
+                    <h2 className="text-xl font-bold">Basic Knowledge</h2>
+                  </div>
+                  <progress
+                    className="progress progress-primary w-90"
+                    value="50"
+                    max="100"
+                  ></progress>
                 </div>
-                <progress
-                  className="progress progress-primary w-90"
-                  value="50"
-                  max="100"
-                ></progress>
               </div>
-            </div>
             </div>
           </div>
 
@@ -320,54 +333,15 @@ const ResumeDetail = () => {
               Projects
             </h2>
             <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5 shadow-lg p-3">
-              <div className="project shadow-2xl">
-                <img src={image1} alt="Avatar" className="project_image" />
-                <div className="overlay">
-                  <div className="text">
-                  <label onClick={()=>handleDetails(1)} htmlFor="my-modal-6" className="btn modal-button text-accent">
-                      Details
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="project shadow-2xl">
-                <img src={image3} alt="Avatar" className="project_image" />
-                <div className="overlay">
-                  <div className="text">
-                  <label onClick={()=>handleDetails(2)} htmlFor="my-modal-6" className="btn modal-button">
-                      Details
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="project shadow-2xl">
-                <img src={image4} alt="Avatar" className="project_image" />
-                <div className="overlay">
-                  <div className="text">
-                  <label onClick={()=>handleDetails(3)} htmlFor="my-modal-6" className="btn modal-button">
-                      Details
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="project shadow-2xl">
-                <img src={image2} alt="Avatar" className="project_image" />
-                <div className="overlay">
-                  <div className="text">
-                   
-                    <label onClick={()=>handleDetails(4)} htmlFor="my-modal-6" className="btn modal-button">
-                      Details
-                    </label>
-                  </div>
-                </div>
-              </div>
+
+              {single.map(item=> (<Projects key={item.id} item={item}></Projects>))}
             </div>
           </div>
         </div>
       </div>
 
-    {/* Modal */}
-      <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+      {/* Modal */}
+      {/* <input type="checkbox" id="my-modal-6" className="modal-toggle" />
       <div className="modal modal-top sm:modal-middle">
         <div className="modal-box">
           <h3 className="text-xl text-primary font-bold">Features:</h3>
@@ -385,7 +359,8 @@ const ResumeDetail = () => {
             </label>
           </div>
         </div>
-      </div>
+      </div> */}
+      
     </div>
   );
 };
