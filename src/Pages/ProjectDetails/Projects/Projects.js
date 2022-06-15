@@ -11,7 +11,8 @@ const Projects = ({ item }) => {
   
   const handleDetails = (ID)=>{
     const project_details = details.find((detail) => ID === detail.id);
-    <ProjectDetails project_details={project_details}></ProjectDetails>
+    // <ProjectDetails project_details={project_details}></ProjectDetails>
+    console.log(project_details);
   }
 
   return (
@@ -26,7 +27,7 @@ const Projects = ({ item }) => {
             >Details</button>
           </Link>
           
-         
+         {/* {<ProjectDetails project_details={project_details}></ProjectDetails>} */}
         </div>
       </div>
     </div>
