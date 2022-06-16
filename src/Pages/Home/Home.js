@@ -8,6 +8,7 @@ import Services from "../Services/Services";
 import Contact from "../Contact/Contact";
 import Footer from "../Shared/Footer";
 import ReactTypingEffect from "react-typing-effect";
+import Blog from "../Blog/Blog";
 
 const Home = () => {
   const el = useRef(null);
@@ -51,6 +52,7 @@ const Home = () => {
       <About></About>
       <ResumeDetail></ResumeDetail>
       <Services></Services>
+      <Blog></Blog>
       <Contact></Contact>
       {/* <Footer></Footer> */}
     </div>
