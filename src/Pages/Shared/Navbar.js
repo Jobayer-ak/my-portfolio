@@ -57,7 +57,7 @@ const Navbar = () => {
                 tabIndex="0"
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
-                {menuItmes}
+                 {location.pathname ==="/projectDetails" ? desabledMenu : menuItmes}
               </ul>
             </div>
             <Link to="/" className="navbar-brand md:text-end font-bold ml-10"><span className="single text-3xl text-white ">J</span>obayer</Link>
