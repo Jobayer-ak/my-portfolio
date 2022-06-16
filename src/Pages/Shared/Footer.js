@@ -72,7 +72,7 @@ const Footer = () => {
             <h2 className="text-white text-2xl mb-5 py-4">Services</h2>
             <ul className="links">
               <li>
-                <HashLink to="#services">
+                <HashLink to="/#services">
                   <FontAwesomeIcon icon={faArrowRightLong} className="pr-2" />
                   Web Design
                 </HashLink>

@@ -4,7 +4,7 @@ import "./About.css";
 // import pdf from "../Resume/Resume";
 // import CountUp from "react-countup/build/CountUp";
 import CountUp from "react-countup";
-import pdf from "../../CV/Resume-of-Jobayer-1.pdf";
+import pdf from "../../Resume PDF File/Resume of Jobayer.pdf";
 
 const About = () => {
   return (
