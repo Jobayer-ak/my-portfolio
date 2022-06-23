@@ -21,8 +21,8 @@ const Home = () => {
   };
 
   return (
-    <div id="home">
-      <div className="bg-wrap">
+    <div >
+      <div id="home" className="bg-wrap">
         <div className="text-center flex flex-col justify-center items-center animate-box" data-aos="fade-up" data-aos-duration="1000">
           <p className="text-primary text-xl font-bold tracking-widest uppercase">
             Hey! I am

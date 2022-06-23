@@ -6,10 +6,24 @@ import "./Navbar.css";
 const Navbar = () => {
   const location = useLocation();
 
+  const [fix, setFix] = useState(false);
+
+  const setFixed = () =>{
+    if(window.scrollY >= 100){
+      setFix(true);
+    }
+    else{
+      setFix(false);
+    }
+  };
+
+  window.addEventListener("scroll", setFixed);
+
+
     const menuItmes = (
         <>
             <li>
-                <Link to="/">Home</Link>
+                <HashLink to="/#home">Home</HashLink>
             </li>
             
             <li>
@@ -39,7 +53,7 @@ const Navbar = () => {
   
   return (
     <div className="bg_color">
-        <div className="navbar container mx-auto px-12 fixed">
+        <div className={fix ? "navbar fixed scroll z-50 py-6": "navbar py-6 mx-auto no_scroll"}>
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -68,7 +82,7 @@ const Navbar = () => {
             <Link to="/" className="navbar-brand md:text-end font-bold ml-10"><span className="single text-3xl text-white ">J</span>obayer</Link>
           </div>
           <div className="navbar-end hidden lg:flex">
-            <ul className="menu menu-horizontal items p-0">
+            <ul className="nav-items p-0">
               {location.pathname ==="/projectDetails" ? desabledMenu : menuItmes}
               
             </ul>

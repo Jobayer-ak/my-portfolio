@@ -31,10 +31,10 @@ const ResumeDetail = () => {
     <div className="container mx-auto px-12 lg:pt-20">
       <div className="sm:flex md:flex-cols lg:flex-cols py-7 sm:gap-4 md:gap-10 lg:gap-10">
         {/* sidebar menu */}
-        <div className="side-menu ">
+        <div className="side-menu">
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 sticky top-20"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 sticky top-80"
           >
             <li className="font-bold">
               <a
