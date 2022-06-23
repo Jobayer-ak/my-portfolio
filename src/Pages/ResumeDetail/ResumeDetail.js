@@ -70,7 +70,13 @@ const ResumeDetail = () => {
               <div className="mb-9">
                 <h2 className="text-primary text-4xl font-bold">Education</h2>
               </div>
-              <div className="flex flex-cols gap-6 pb-3 edu-box">
+
+              {/* University */}
+              <div 
+              className="flex flex-cols gap-6 pb-3 edu-box"
+              data-aos="fade-up" 
+              data-aos-duration="1000"
+              >
                 <FontAwesomeIcon
                   className="education-icon bg-primary my-2 text-white p-3"
                   icon={faGraduationCap}
@@ -89,7 +95,7 @@ const ResumeDetail = () => {
             </div>
 
             {/* Polytechnic */}
-            <div className="mb-5">
+            <div className="mb-5" data-aos="fade-up" data-aos-duration="1000">
               <div className="flex flex-cols gap-6 pb-3 edu-box">
                 <FontAwesomeIcon
                   className="education-icon bg-primary my-2 text-white p-3"
@@ -112,7 +118,7 @@ const ResumeDetail = () => {
 
             {/* School */}
 
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div className="flex flex-cols gap-6 pb-3 edu-box">
                 <FontAwesomeIcon
                   className="education-icon bg-primary my-2 text-white p-3"
@@ -135,13 +141,13 @@ const ResumeDetail = () => {
           </div>
 
           {/* skills */}
-          <div ref={skillsRef} id="skills" className="skills-info">
+          <div ref={skillsRef} id="skills" className="skills-info" >
             <div className="mb-9  section_heading">
               <h2 className="text-primary text-4xl font-bold">Skills</h2>
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
               <div>
-                <div className="text-center bg-base-100 shadow-2xl rounded-md p-3">
+                <div className="text-center bg-base-100 shadow-2xl rounded-md p-3" data-aos="fade-up" data-aos-duration="1000">
                   <h2 className="text-2xl font-bold text-center py-8">HTML</h2>
                   <div
                     className="radial-progress text-primary"
@@ -165,7 +171,7 @@ const ResumeDetail = () => {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <div className="text-center bg-base-100 shadow-2xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">CSS</h2>
                   <div
@@ -190,7 +196,7 @@ const ResumeDetail = () => {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <div className="text-center bg-base-100 shadow-2xl rounded-md p-3">
                   <h2 className="text-2xl font-bold text-center py-8">
                     JavaScript
@@ -220,8 +226,8 @@ const ResumeDetail = () => {
 
             {/* progress bar*/}
             <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mt-7 py-10">
-              <div>
-                <div className="flex flex-cols justify-between px-2">
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <div className="flex flex-cols justify-between px-2" >
                   <h2 className="text-2xl font-bold">React Js</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
                 </div>
@@ -232,7 +238,7 @@ const ResumeDetail = () => {
                 ></progress>
               </div>
 
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <div className="flex flex-cols justify-between px-2">
                   <h2 className="text-2xl font-bold">Tailwind Css</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
@@ -244,7 +250,7 @@ const ResumeDetail = () => {
                 ></progress>
               </div>
 
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <div className="flex flex-cols justify-between px-2">
                   <h2 className="text-2xl font-bold">Bootstrap</h2>
                   <h2 className="text-2xl font-bold">80%</h2>
@@ -256,7 +262,7 @@ const ResumeDetail = () => {
                 ></progress>
               </div>
 
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <div className="flex flex-cols justify-between px-2">
                   <h2 className="text-2xl font-bold">Git</h2>
                   <h2 className="text-2xl font-bold">85%</h2>
@@ -272,7 +278,7 @@ const ResumeDetail = () => {
             {/* Familiar with Backend skills */}
             <div>
               <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                   <div className="flex flex-cols justify-between px-2">
                     <h2 className="text-2xl font-bold">Node Js</h2>
                     <h2 className="text-xl font-bold">Basic Knowledge</h2>
@@ -284,7 +290,7 @@ const ResumeDetail = () => {
                   ></progress>
                 </div>
 
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                   <div className="flex flex-cols justify-between px-2">
                     <h2 className="text-2xl font-bold">ExpressJs</h2>
                     <h2 className="text-xl font-bold">Basic Knowledge</h2>
@@ -296,7 +302,7 @@ const ResumeDetail = () => {
                   ></progress>
                 </div>
 
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                   <div className="flex flex-cols justify-between px-2">
                     <h2 className="text-2xl font-bold">Type Script</h2>
                     <h2 className="text-xl font-bold">Basic Knowledge</h2>
@@ -308,7 +314,7 @@ const ResumeDetail = () => {
                   ></progress>
                 </div>
 
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                   <div className="flex flex-cols justify-between px-2">
                     <h2 className="text-2xl font-bold">MongoDB</h2>
                     <h2 className="text-xl font-bold">Basic Knowledge</h2>
@@ -328,7 +334,7 @@ const ResumeDetail = () => {
             <h2 className="text-4xl text-primary font-bold text-center my-7">
               Projects
             </h2>
-            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5 shadow-lg p-3">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5 shadow-lg p-3" >
 
               {single.map(item=> (<Projects key={item.id} item={item}></Projects>))}
             </div>

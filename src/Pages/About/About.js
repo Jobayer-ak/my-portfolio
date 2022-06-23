@@ -14,7 +14,7 @@ const About = () => {
           <img src={image} className="image"></img>
         </div>
 
-        <div className="aboutMe lg:p-10">
+        <div className="aboutMe lg:p-10" data-aos="fade-up" data-aos-duration="2000">
           <h2 className="text-bold text-5xl font-bold mb-5">About Me</h2>
           <p className="pb-5">
             To take a challenging role as Front End Web Developer in a highly

@@ -19,7 +19,7 @@ const Projects = ({ item }) => {
 
 
   return (
-    <div className="project shadow-2xl">
+    <div className="project shadow-2xl" data-aos="fade-up" data-aos-duration="1000">
       <img src={scr_link} alt="Avatar" className="project_image" />
       <div className="overlay">
         <div className="text" >

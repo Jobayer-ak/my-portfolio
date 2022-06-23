@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div id="home">
       <div className="bg-wrap">
-        <div className="text-center flex flex-col justify-center items-center animate-box">
+        <div className="text-center flex flex-col justify-center items-center animate-box" data-aos="fade-up" data-aos-duration="1000">
           <p className="text-primary text-xl font-bold tracking-widest uppercase">
             Hey! I am
           </p>
@@ -39,7 +39,7 @@ const Home = () => {
             />
           </h2>
         </div>
-        <div className="mouse" onClick={() => handleScroll()}>
+        <div className="mouse" onClick={() => handleScroll()} data-aos="fade-up" data-aos-duration="1000">
           <a href="#" className="mouse-icon">
             <div className="mouse-wheel">
               <div className="arrow-icon">
@@ -54,7 +54,6 @@ const Home = () => {
       <Services></Services>
       <Blog></Blog>
       <Contact></Contact>
-      {/* <Footer></Footer> */}
     </div>
   );
 };

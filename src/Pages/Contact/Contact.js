@@ -24,7 +24,11 @@ const Contact = () => {
       <h2 className="text-center text-5xl font-bold my-3">Contact Me</h2>
 
       <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-7 my-10">
-        <div className="text-center lg:w-96 shadow-2xl py-7">
+        <div
+          className="text-center lg:w-96 shadow-2xl py-7"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col justify-center items-center icon_parent">
             <FontAwesomeIcon className="icon" icon={faLocationDot} />
           </div>
@@ -33,7 +37,12 @@ const Contact = () => {
             Tarakanda, Mymensingh, Bangladesh
           </p>
         </div>
-        <div className="text-center lg:w-96 shadow-2xl p-9">
+
+        <div
+          className="text-center lg:w-96 shadow-2xl p-9"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col justify-center items-center icon_parent">
             <FontAwesomeIcon className="icon" icon={faPhone} />
           </div>
@@ -42,7 +51,12 @@ const Contact = () => {
             +880 1725 008757
           </a>
         </div>
-        <div className="text-center lg:w-96 shadow-2xl p-9">
+
+        <div
+          className="text-center lg:w-96 shadow-2xl p-9"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col justify-center items-center icon_parent">
             <FontAwesomeIcon className="icon" icon={faPaperPlane} />
           </div>
@@ -59,7 +73,7 @@ const Contact = () => {
           <img src={image} className="image"></img>
         </div>
 
-        <div className="text-center">
+        <div className="text-center" data-aos="fade-up" data-aos-duration="1000">
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"

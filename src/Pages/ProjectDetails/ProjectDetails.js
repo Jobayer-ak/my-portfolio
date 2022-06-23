@@ -69,7 +69,7 @@ const ProjectDetails = () => {
             )}
           </div>
 
-          <div className="px-5 py-4">
+          <div className="px-5 py-4" data-aos="fade-up" data-aos-duration="1000">
             <h4 className="text-3xl text-primary font-bold text-center mb-12">
               {name}
             </h4>
