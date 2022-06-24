@@ -5,8 +5,9 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
-
   const [fix, setFix] = useState(false);
+
+  
 
   const setFixed = () =>{
     if(window.scrollY >= 100){
@@ -23,7 +24,7 @@ const Navbar = () => {
     const menuItmes = (
         <>
             <li>
-                <HashLink to="/#home">Home</HashLink>
+                <HashLink smooth to="/#home">Home</HashLink>
             </li>
             
             <li>

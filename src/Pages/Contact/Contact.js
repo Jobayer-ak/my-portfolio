@@ -6,6 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useInView } from "react-intersection-observer";
 import image from "../../Images/my-bg-with-pic.png";
 import "./Contact.css";
 
@@ -16,6 +17,7 @@ const Contact = () => {
     watch,
     formState: { errors },
   } = useForm();
+
 
   const onSubmit = (data) => console.log(data);
 
